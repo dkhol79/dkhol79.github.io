@@ -15,7 +15,7 @@ body {
 
 /* Header Styles */
 header {
-    background: #4a90e2; /* Soft blue */
+    background: #1F5445;
     height: 100vh; /* Full viewport height */
     display: flex;
     justify-content: center;
@@ -25,14 +25,14 @@ header {
 
 .hero h1 {
     font-size: 4em; /* Huge text */
-    color: white;
+    color: #FFF4BA;
 }
 
 .scroll-down {
     display: inline-block;
     margin-top: 20px;
     font-size: 2em;
-    color: white;
+    color: #FFF4BA;
     text-decoration: none;
     transition: transform 0.3s;
 }
@@ -74,7 +74,7 @@ nav a:hover {
     background: white;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    max-width: 800px; /* Keep the sections narrower */
+    max-width: 800px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -83,7 +83,7 @@ nav a:hover {
 .info-section h2 {
     margin: 0 20px 0 0; /* Space between title and content */
     flex: 1; /* Allow the title to take up space */
-    color: #4a90e2; /* Soft blue */
+    color: #1F5445;
     font-size: 2.5em; /* Large title */
 }
 
@@ -113,7 +113,7 @@ section#skills li {
 footer {
     text-align: center;
     padding: 20px;
-    background: #4a90e2; /* Soft blue */
+    background: #1F5445;
     color: white;
 }
 
