@@ -15,20 +15,29 @@
             <a href="#about" class="scroll-down">↓</a>
         </div>
     </header>
+    
     <nav>
         <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="logo"><img src="logo mark.png" alt="Logo"></li>
+            <li><a href="#about">about me</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#contact">contact</a></li>
         </ul>
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </nav>
+    
     <section id="about" class="info-section">
         <h2>About Me</h2>
         <div class="info-content">
             <p>I’m Khoi, a passionate digital designer who loves creating beautiful and functional user experiences. My goal is to blend creativity and technology to produce engaging designs that resonate with users.</p>
         </div>
     </section>
+    
     <section id="skills" class="info-section">
         <h2>Skills</h2>
         <div class="info-content">
@@ -41,6 +50,7 @@
             </ul>
         </div>
     </section>
+    
     <section id="projects" class="info-section">
         <h2>Projects</h2>
         <div class="info-content">
@@ -52,10 +62,21 @@
             </ul>
         </div>
     </section>
+    
     <footer id="contact">
         <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:khoi@gmail.com">khoidntran@gmail.com</a></p>
+        <p>Email: <a href="mailto:khoidntran@gmail.com">khoidntran@gmail.com</a></p>
     </footer>
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('nav ul');
+
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+        });
+    </script>
 
     <script>
         document.querySelector('.scroll-down').addEventListener('click', function (event) {
@@ -67,5 +88,6 @@
             });
         });
     </script>
+
 </body>
 </html>

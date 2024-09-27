@@ -5,8 +5,9 @@
     box-sizing: border-box;
 }
 
-/* Body and Background */
-body {
+/* Ensure the body and html take up full height */
+html, body {
+    height: 100%;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
@@ -43,18 +44,38 @@ header {
 
 /* Navigation Styles */
 nav {
-    background: #333;
+    background: #1F5445;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Make sure it's on top of other content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: none;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-    padding: 10px 0;
+    align-items: center;
+    margin: 0;
+    padding: 0; /* Ensure there's no extra padding */
+    width: 100%;
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin: 0 15px; /* Spacing between navigation items */
+}
+
+nav ul li.logo {
+    margin-right: auto; /* Logo to the left */
+}
+
+nav ul li.logo img {
+    height: 25px;
 }
 
 nav a {
@@ -65,6 +86,44 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+}
+
+/* Burger Menu Styles */
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Burger Menu Active State */
+.nav-active {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the menu items */
+}
+
+.burger.toggle div:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger.toggle div:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.toggle div:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Add margin to the body content to avoid overlapping with the fixed nav */
+body {
+    padding-top: 70px; /* (60px height + 10px padding) */
 }
 
 /* Info Section Styles */
@@ -124,4 +183,44 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Responsive design: Hide nav items and show burger menu on small screens */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .nav-active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #1F5445;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .burger {
+        margin-left: auto;
+    }
+
+    .burger.toggle div {
+        margin: 5px auto;
+    }
+
+    nav ul li.logo {
+        display: block;
+        margin: 0 auto 20px auto;
+    }
 }
