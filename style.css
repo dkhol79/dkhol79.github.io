@@ -7,7 +7,7 @@
 
 /* Body and Background */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
@@ -16,37 +16,29 @@ body {
 /* Header Styles */
 header {
     background: #4a90e2; /* Soft blue */
-    color: white;
-    padding: 60px 0;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
-header .container {
-    max-width: 800px;
-    margin: auto;
+.hero h1 {
+    font-size: 4em; /* Huge text */
+    color: white;
 }
 
-header h1 {
-    font-size: 3em;
-}
-
-header p {
-    font-size: 1.5em;
-    margin: 10px 0;
-}
-
-header .btn {
-    background: #fff;
-    color: #4a90e2;
-    padding: 10px 20px;
-    border-radius: 5px;
+.scroll-down {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 2em;
+    color: white;
     text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s;
+    transition: transform 0.3s;
 }
 
-header .btn:hover {
-    background: #e2e2e2;
+.scroll-down:hover {
+    transform: translateY(5px);
 }
 
 /* Navigation Styles */
@@ -75,19 +67,33 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Section Styles */
-section {
+/* Info Section Styles */
+.info-section {
     padding: 40px 20px;
     margin: 20px auto;
     background: white;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
+    max-width: 800px; /* Keep the sections narrower */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-section h2 {
-    margin-bottom: 20px;
+.info-section h2 {
+    margin: 0 20px 0 0; /* Space between title and content */
+    flex: 1; /* Allow the title to take up space */
     color: #4a90e2; /* Soft blue */
+    font-size: 2.5em; /* Large title */
+}
+
+.info-content {
+    flex: 2; /* Allow content to take up more space */
+    padding: 20px;
+}
+
+.info-content p {
+    font-size: 1.1em; /* Paragraph size */
 }
 
 /* Skills List */
