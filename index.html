@@ -6,6 +6,7 @@
     <title>Khoi's Website</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo-2.png"> <!-- Favicon -->
 </head>
 <body>
     <header>
@@ -53,7 +54,18 @@
     </section>
     <footer id="contact">
         <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:khoi@gmail.com">khoidntran@gmail.com</a></p>
+        <p>Email: <a href="mailto:khoi@gmail.com">khoi@gmail.com</a></p>
     </footer>
+
+    <script>
+        document.querySelector('.scroll-down').addEventListener('click', function (event) {
+            event.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            targetElement.scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    </script>
 </body>
 </html>
