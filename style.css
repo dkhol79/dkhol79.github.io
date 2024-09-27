@@ -28,7 +28,6 @@ header {
     color: #FFF4BA;
 }
 
-/* Scroll Down Arrow */
 .scroll-down {
     display: inline-block;
     margin-top: 20px;
@@ -45,11 +44,6 @@ header {
 /* Navigation Styles */
 nav {
     background: #333;
-    position: fixed; /* Fixed positioning */
-    top: 0; /* Stick to the top */
-    left: 0; /* Align to the left */
-    right: 0; /* Align to the right */
-    z-index: 1000; /* Ensure it's above other content */
 }
 
 nav ul {
@@ -120,7 +114,7 @@ footer {
     text-align: center;
     padding: 20px;
     background: #1F5445;
-    color: #FFF4BA;
+    color: white;
 }
 
 footer a {
