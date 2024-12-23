@@ -1,0 +1,707 @@
+@font-face {
+    font-family: 'Minonuku';
+    src: url('assets/Fonts/minonuku.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kessel105-Book';
+    src: url('assets/fonts/Kessel105Text-Book.otf') format('opentype');
+    font-weight: normal;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Lischalte';
+    src: url('assets/fonts/lischalte.otf') format('opentype');
+    font-weight: normal;
+    font-style: oblique;
+}
+
+.gradient-line {
+    height: 5px; /* Adjust the height of the gradient line */
+    background: linear-gradient(100deg, #169db2, #f2bc1a, #57ec57);
+    background-size: 300%;
+    animation: gradient-animation 10s ease-in-out infinite;
+}
+
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'assets/Font/Kessel105Text-Book.otf', sans-serif;
+    background-color: rgb(31, 84, 69);
+    color: black;
+    position: relative;
+    min-height: 100vh;
+    height: auto;
+}
+
+/* Custom cursor styles */
+.cursor {
+    width: 10px;
+    height: 10px;
+    background-color: #FFF4BA;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+
+.cursor-outline {
+    width: 30px;
+    height: 30px;
+    border: 1.5px solid #FFF4BA;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%) scale(1); /* Added scale(1) for consistency */
+    transition: transform 0.3s ease, border-width 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hover effect for menu icon */
+.nav-toggle:hover ~ .cursor-outline {
+    transform: translate(-50%, -50%) scale(3); /* Ensures scaling is centered */
+    border-width: .75px;  /* Adjust thickness */
+}
+
+/* Hover effect for CTA buttons (both .cta and .cta-white) */
+.cta:hover ~ .cursor-outline, .cta-white:hover ~ .cursor-outline {
+    transform: translate(-50%, -50%) scale(3); /* Ensures scaling is centered */
+    border-width: .75px;  /* Adjust thickness */
+}
+
+/* Hover effect for CTA buttons (both .cta and .cta-white) */
+.cta:hover ~ .cursor, .cta-white:hover ~ .cursor {
+    transform: translate(-50%, -50%) scale(1); /* Keeps the dot centered */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 150px;
+    position: relative; /* Ensure header content stays above the background lines */
+    z-index: 1; /* Bring the header above the background */
+}
+
+.logo img {
+    max-height: 30px;
+}
+
+/* General Reset */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Navigation container */
+nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Stacked squares with dots */
+.nav-toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(45deg, rgb(189, 246, 189), #81C784);
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    z-index: 20;
+}
+
+.nav-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* Dots */
+.dot {
+    width: 6px;
+    height: 6px;
+    background-color: #1B5E20;
+    border-radius: 50%;
+    margin: 2px 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+nav.active .dot:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+nav.active .dot:nth-child(2) {
+    opacity: 0; /* Middle dot disappears */
+}
+
+nav.active .dot:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+/* Navigation list (initially hidden) */
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 40px;
+    gap: 10px;
+    border-radius: 8px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scaleX(0);  /* Initially scaled down */
+    transform-origin: right center;  /* Set scale origin from the left */
+    opacity: 0;  /* Hidden initially */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    z-index: 10;
+    margin-right: 50px;
+}
+
+/* Show the navigation when active */
+nav.active .navigation {
+    transform: scaleX(1);  /* Expand the items from the left */
+    opacity: 1;  /* Make the items visible */
+}
+
+/* Nav items styling */
+.navigation li {
+    margin: 0;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #1B5E20;
+    background-color: rgb(189, 246, 189);
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navigation a:hover {
+    background-color: #81C784;
+    color: #FFF;
+}
+
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    margin-left: 20px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+.social-icons img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    filter: brightness(0);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    filter: brightness(0.5);
+    transform: scale(1.1);
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 5px 150px;
+    padding-bottom: 110px;
+}
+
+.left-column {
+    flex: 8;
+    position: relative; /* Added for positioning the sub-message */
+}
+
+.message {
+    font-family: 'Minonuku', sans-serif;
+    font-weight: normal;
+    font-size: 16rem;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-right: 50px;
+    background: linear-gradient(90deg, #16b28b, #f2bc1a, #57ecd3);
+    background-size: 300%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-animation 10s ease-in-out infinite;
+}
+
+.greeting {
+    display: block;
+}
+
+.name {
+    display: block;
+}
+
+.right-column {
+    flex: 12; /* Increase the flex value to give more space */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    right: 0;
+    width: 17%; /* Or set an explicit width based on the design */
+}
+
+.sub-message {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1.25rem;
+    color: rgb(189, 246, 189);
+    position: absolute;
+    margin-bottom: 43px;
+    right: 0;
+    margin-left: 10px;
+    width: auto; /* Ensure sub-message has room to expand */
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* Base CTA Button Styles */
+.cta, .cta-white {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'assets/Font/Kessel105Text-Book.otf', sans-serif;
+    background: none;
+    border: 2px solid;
+    border-radius: 30px;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* CTA Text and Arrow Container */
+.cta, .cta .arrow, .cta-white, .cta-white .arrow {
+    color: var(--cta-color, rgb(189, 246, 189));
+}
+
+.cta .arrow-container, .cta-white .arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid transparent;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.cta .arrow, .cta-white .arrow {
+    font-size: 1.5rem;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+/* Hover Effects */
+.cta:hover, .cta-white:hover {
+    padding-right: 50px;
+    border-color: transparent;
+}
+
+.cta:hover .arrow-container, .cta-white:hover .arrow-container {
+    background: var(--cta-bg-hover, rgb(189, 246, 189));
+    border-color: var(--cta-bg-hover, rgb(189, 246, 189));
+}
+
+.cta:hover .arrow, .cta-white:hover .arrow {
+    color: var(--cta-arrow-hover, rgb(31, 84, 69));
+    transform: translateX(3px);
+}
+
+/* CTA-Specific Styles */
+.cta {
+    --cta-color: rgb(189, 246, 189);
+    --cta-bg-hover: rgb(189, 246, 189);
+    --cta-arrow-hover: rgb(31, 84, 69);
+}
+
+/* CTA-White-Specific Styles */
+.cta-white {
+    --cta-color: white;
+    --cta-bg-hover: white;
+    --cta-arrow-hover: black;
+    border-color: white;
+    background-color: transparent;
+}
+
+/* Featured Work Section */
+.featured-work {
+    position: relative;
+    min-height: 700px;
+    overflow: visible;
+    padding-top: 100px;
+    transition: padding 0.3s ease-out;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 50%; /* Center the video */
+    transform: translateX(-50%); /* Ensure the video is centered */
+    height: 100%;
+    width: 90%; /* Initial width */
+    background-color: black;
+    z-index: 1;
+    display: flex;
+    justify-content: center; /* Center the video */
+    align-items: center;
+    transition: width 0.7s ease-in-out; /* Smooth transition for width */
+}
+
+.background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Content Section - Center Content Horizontally */
+.content {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); /* Center vertically and horizontally */
+    color: rgb(255, 255, 255);
+    width: 90vw; /* Set width to 90% of the viewport width */
+    max-width: 1400px; /* Optional: Limit the width to a maximum value */
+    z-index: 2;
+    justify-content: space-between; /* Space out the columns */
+    padding-left: 50px; /* Adjust padding for better spacing */
+    padding-right: 50px;
+    gap: 80px; /* Added gap to increase space between columns */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Visible state */
+.content.visible {
+    opacity: 1;
+}
+
+.left {
+    width: 50%; /* Fixed width for text */
+    padding-right: 50px; /* Space between title, description, and image */
+    text-align: left; /* Align text to the left */
+    box-sizing: border-box; /* Make sure padding doesn't affect the width */
+}
+
+.project-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 18px;
+    line-height: 1.5; /* Adds spacing between lines for better readability */
+    margin-bottom: 20px; /* Adds space at the bottom of the paragraph */
+}
+
+.right {
+    width: 50%; /* Take up the other 50% of the content width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Hover State - Expands Video Width */
+.featured-work:hover .video-container {
+    width: 100%; /* Expands to full width on hover */
+}
+
+/* Scroll State - Expand Video Width */
+.featured-work.scrolled .video-container {
+    width: 100%; /* Expand video to full width on scroll */
+}
+
+/* New Message Section */
+.message-section {
+    background: none;
+    padding: 180px 150px; /* Adjust padding as needed */
+  }
+  
+  .message-text {
+    font-family: 'Minonuku', sans-serif;
+    font-size: 8rem; /* Adjust size as needed */
+    color: rgb(189, 246, 189);
+    text-align: left;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+/* Portfolio Section */
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 40px; /* Space between items */
+    background: none; /* Transparent background */
+    padding: 80px 150px; /* 150px padding on left and right */
+}
+
+/* Portfolio Item */
+.portfolio-item {
+    opacity: 0; /* Initially invisible */
+    transform: translateY(50px); /* Start slightly below their final position */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Smooth transition */
+    position: relative; /* Needed for pseudo-element positioning */
+}
+
+.portfolio-item:hover .portfolio-title::after {
+    width: 100%; /* Expand the underline across the full width of the title on hover */
+}
+
+.portfolio-item:hover .portfolio-title {
+    color: rgb(189, 246, 189);; /* Optional: You can change the title color when hovering */
+}
+
+/* Portfolio Title */
+.portfolio-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px; /* Space between image and title */
+    position: relative; /* Ensure the pseudo-element is positioned relative to this element */
+    display: inline-block; /* Allows better control over the underline size */
+}
+
+.portfolio-title::after {
+    content: ""; /* Add an empty content for the pseudo-element */
+    position: absolute; /* Position it relative to the .portfolio-title */
+    bottom: -2px; /* Position the underline just below the text */
+    left: 0; /* Start from the left */
+    width: 0; /* Initial width of the underline */
+    height: 2px; /* Thickness of the underline */
+    background-color: rgb(189, 246, 189); /* Match the text color for the underline */
+    transition: width 0.4s ease; /* Smooth transition effect */
+}
+
+/* Portfolio Item Visible */
+.portfolio-item.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to the final position */
+}
+
+/* Portfolio Item Image */
+.portfolio-item img {
+    width: 100%; /* Ensure all images take up the full width of their container */
+    height: 500px; /* Increased height for uniformity */
+    object-fit: cover; /* Ensures the image covers the container, maintaining aspect ratio */
+    border-radius: 20px;
+}
+
+/* Portfolio Title and Description */
+.portfolio-title, .portfolio-description {
+    color: rgb(189, 246, 189);
+    border-radius: 10px;
+    text-align: left; /* Left-align text */
+    width: 100%; /* Make sure it spans the full width of the container */
+    box-sizing: border-box; /* Ensures padding doesn't affect the width */
+}
+
+.portfolio-description {
+    font-size: 14px;
+    margin-top: 5px; /* Space between title and description */
+}
+
+/* Grid Layout for Rows */
+.portfolio-item.long-image {
+    grid-column: span 2; /* Makes the image take up two columns */
+}
+
+.portfolio-item:nth-child(1) {
+    grid-column: span 2; /* Long image on the first row */
+}
+.portfolio-item:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.portfolio-item:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.portfolio-item:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+.portfolio-item:nth-child(2), 
+.portfolio-item:nth-child(3), 
+.portfolio-item:nth-child(4) {
+    grid-column: span 1; /* Single column for the other items in the middle row */
+}
+
+.portfolio-item:nth-child(5) {
+    grid-column: span 1; /* Single column for the last item in the bottom row */
+}
+
+.portfolio-item:nth-child(6) {
+    grid-column: span 1; /* Long image for the last row */
+}
+
+.portfolio-item:nth-child(7) {
+    grid-column: span 2; /* Long image for the last row */
+}
+
+footer {
+    margin: 0 auto;
+    padding: 50px 150px;
+    background-color: rgb(31, 84, 69);
+    color: rgb(189, 246, 189);
+    text-align: center;
+    position: relative;
+}
+
+.footer-message {
+    font-family: 'Minonuku', sans-serif;
+    font-weight: normal;
+    font-size: 12rem; /* Slightly smaller than header text */
+    background: linear-gradient(90deg, #16b28b, #f2bc1a, #57ecd3);
+    background-size: 300%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-animation 10s ease-in-out infinite;
+    margin-bottom: 20px;
+}
+
+.footer-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 150px; /* Adds space above */
+    margin-bottom: 150px; /* Adds space below */
+}
+
+
+.email-text {
+    font-family: 'assets/Font/Kessel105Text-Book.otf', sans-serif;
+    font-size: 1.1rem;
+    color: rgb(189, 246, 189);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.copy-email-button {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'assets/Font/Kessel105Text-Book.otf', sans-serif;
+    background: none;
+    border: 2px solid rgb(189, 246, 189);
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    color: rgb(189, 246, 189); /* Initial text color */
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+.copy-email-button .arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid transparent;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.copy-email-button .arrow {
+    font-size: 1.5rem;
+    color: rgb(189, 246, 189); /* Initial arrow color */
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.copy-email-button:hover {
+    padding-right: 50px;
+    border-color: transparent;
+}
+
+.copy-email-button:hover .arrow-container {
+    background: rgb(189, 246, 189);
+    border-color: rgb(189, 246, 189);
+}
+
+.copy-email-button:hover .arrow {
+    color: rgb(31, 84, 69); /* Change arrow color on hover */
+    transform: translateX(3px);
+}
+
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.social-links a {
+    color: rgb(189, 246, 189);
+    text-decoration: none;
+    font-size: 1rem;
+    margin-right: 20px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-right {
+    font-size: 1rem;
+    text-align: right;
+}
+
