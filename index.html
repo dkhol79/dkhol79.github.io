@@ -1,128 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khoi's Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="logo-2.png"> <!-- Favicon -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="mobile-styles.css" media="screen and (max-width: 1201px)">
+  <link rel="icon" type="image/png" href="assets/Favicon/logo-2.png">
+  <style>
+    .no-cursor {
+      cursor: default;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="hero">
-            <h1>I'm Khoi,<br>a digital designer</h1>
-            <a href="#about" class="scroll-down">↓</a>
-        </div>
-    </header>
-    
+  <div class="gradient-line"></div>
+  <header>
+    <div class="logo">
+      <img src="assets/Logo/logo-mark.png" alt="Logo">
+    </div>
     <nav>
-        <ul>
-            <li class="logo"><img src="logo-mark.png" alt="Logo"></li>
-            <li><a href="#about">about me</a></li>
-            <li><a href="#skills">skills</a></li>
-            <li><a href="#projects">projects</a></li>
-            <li><a href="#contact">contact</a></li>
-        </ul>
-        <div class="burger">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+      <div class="nav-toggle">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <ul class="navigation">
+        <li><a href="#work">work</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#info">contact</a></li>
+      </ul>
     </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div class="left-column">
+        <h1 class="message">
+          <span class="greeting">Hi, I'm</span>
+          <span class="name">Khoi Tran</span>
+        </h1>
+        <div class="right-column">
+          <p class="sub-message">
+            I turn pixels into potential and clicks into impact.
+          </p>
+        </div>
+        <button class="cta">
+          See My Work
+          <div class="arrow-container">
+            <span class="arrow">→</span>
+          </div>
+        </button>
+      </div>
+      <div class="right-column"></div>
+    </section>
     
-    <section id="about" class="info-section">
-        <h2>About Me</h2>
-        <div class="info-content">
-            <p>I’m Khoi Tran, a passionate digital designer who loves creating beautiful and functional user experiences. My goal is to blend creativity and technology to produce engaging designs that resonate with users.</p>
-        </div>
-    </section>
-
-    <section id="my-interests" class="info-section">
-        <h2>My Interests</h2>
-        <div class="info-content">
-            <ul>
-                <li>I like doing user and market research.</li>
-                <li>I like designing user interfaces.</li>
-                <li>I enjoy road-tripping.</li>
-            </ul>        </div>
-    </section>
-    
-    <section id="techical-experience" class="info-section">
-        <h2>Technical Experience</h2>
-        <div class="info-content">
-            <p>I work as a UX/UI designer for a design agency, so I have experience mainly with CSS, HTML, and JavaScript to maintain websites. Since going back to school, I have used Python to make programs and games, as well as JavaScript and CSS to make mobile interfaces.</p>
-        </div>
-    </section>
-
-    <section id="skills" class="info-section">
-        <h2>Skills</h2>
-        <div class="info-content">
-            <p>My skills include:</p>
-            <ul>
-                <li>UI/UX Design</li>
-                <li>Graphic Design</li>
-                <li>Web Development</li>
-                <li>Data Visualization</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="my-current-project" class="info-section">
-        <h2><a href="https://fuzionsnz.github.io/GVSU-CIS641-GameSmiths/" target="_blank">My Current Project: Overthrone</a></h2>
-        <div class="info-content">
-            <p>Imagine a board game that combines cunning strategy, unpredictable twists, and high-stakes competition—all packed into a fast-paced, dynamic experience. This is <strong>Overthrone</strong>, a game where players vie for dominance in a kingdom full of opportunities and treacherous surprises.</p>
-            <p>In <strong>Overthrone</strong>, you and up to seven other players are locked in a battle to see who can amass the most points before time runs out. The kingdom's landscape changes with every roll of the dice, throwing everything from point-draining traps to mini-game challenges your way. Every turn is a decision point: will you play it safe or risk it all to turn the game in your favor?</p>
-            <p>The brilliance of <strong>Overthrone</strong> lies in its blend of strategy and luck. The board features spaces that can catapult you ahead or drag everyone else down, and as you race to the end of the board, mini-games add another layer of competition, giving players a chance to flip the script.</p>
-            <h3>What I’ve Done This Semester:</h3>
-            <ul>
-                <li>Designed and built a Game Board System that ensures excitement for the game.</li>
-                <li>Developed a Player Turn Logic, enabling smooth transitions between players while enforcing game rules.</li>
-                <li>Designed Mini-Games Integration for added excitement and competitive bonus points.</li>
-                <li>Created Offline Multiplayer and Lobby Creation for seamless gameplay in an offline environment.</li>
-            </ul>
-            <h3>Why This Matters:</h3>
-            <p><strong>Overthrone</strong> has allowed me to improve critical development skills, from procedural generation and UI/UX design to performance optimization in an offline, multiplayer environment. This project goes beyond just a game. Not only does this showcase my ability to manage complex logic and game mechanics, but it also demonstrates my ability to build user-centered, engaging applications with real-world use cases.</p>
+    <section class="featured-work">
+        <div class="video-container">
+          <video autoplay loop muted class="background-video">
+            <source src="assets/video/flamingo.mp4" type="video/mp4">
+          </video>
+          <div class="content">
+            <div class="left">
+              <h3 class="project-title">Viet Nom</h3>
+              <p class="project-description">My project for showcasing Vietnam’s culinary culture blends traditional recipes, stories, and cultural insights in an immersive, user-friendly platform. It highlights the rich diversity of Vietnamese cuisine, offering a deeper understanding of its history and regional variations, while promoting the nation’s cultural essence through the universal language of food.</p>
+              <button class="cta cta-white">
+                See More
+                <div class="arrow-container">
+                  <span class="arrow">→</span>
+                </div>
+              </button>
+            </div>
+            <div class="right">
+              <img src="assets/Work/VietNom/Phone-Dual.png" alt="Viet Nom Project Image">
+            </div>
+          </div>
         </div>
     </section>
     
-    <section id="projects" class="info-section">
-        <h2>Projects</h2>
-        <div class="info-content">
-            <p>Here are some of my recent projects:</p>
-            <ul>
-                <li><strong>Project 1:</strong> Description</li>
-                <li><strong>Project 2:</strong> Description</li>
-                <li><strong>Project 3:</strong> Description</li>
-            </ul>
-        </div>
+    <section class="message-section">
+      <p class="message-text">
+        I transform designs into experiences and interactions into engagement.
+      </p>
     </section>
-    
-    <footer id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:khoidntran@gmail.com">khoidntran@gmail.com</a></p>
-    </footer>
 
-    <script>
-        const burger = document.querySelector('.burger');
-        const nav = document.querySelector('nav ul');
+    <section class="portfolio">
+      <div class="portfolio-item">
+        <img src="assets\Work\Diverse Global\Hunna-exploration-phase-2-04.jpg" alt="Diverse Global">
+        <div class="portfolio-title">Project 1</div>
+        <div class="portfolio-description">Description for project 1.</div>
+      </div>
+      <div class="portfolio-item">
+        <img src="assets\Work\Essence\Frame-290.png" alt="Essence Group">
+        <div class="portfolio-title">Project 2</div>
+        <div class="portfolio-description">Description for project 2.</div>
+      </div>
+      <div class="portfolio-item">
+        <img src="assets\Work\Event Garde\Frame-264.png" alt="Event Garde">
+        <div class="portfolio-title">Project 3</div>
+        <div class="portfolio-description">Description for project 3.</div>
+      </div>
+      <div class="portfolio-item long-image">
+        <img src="assets\Work\Fredrick Contruction\Hunna-exploration-phase-2-3-01.jpg" alt="Fredrick Contsruction">
+        <div class="portfolio-title">Project 4</div>
+        <div class="portfolio-description">Description for project 4.</div>
+      </div>
+      <div class="portfolio-item">
+        <img src="assets\Work\Green Well\GW-Mobile.png" alt="Green Well">
+        <div class="portfolio-title">Project 5</div>
+        <div class="portfolio-description">Description for project 5.</div>
+      </div>
+      <div class="portfolio-item">
+        <img src="assets\Work\TIS\Rectangle-595.png" alt="TIS">
+        <div class="portfolio-title">Project 6</div>
+        <div class="portfolio-description">Description for project 6.</div>
+      </div>
+      <div class="portfolio-item">
+        <img src="assets\Work\TIS\Rectangle-595.png" alt="TIS">
+        <div class="portfolio-title">Project 7</div>
+        <div class="portfolio-description">Description for project 6.</div>
+      </div>
+    </section>
 
-        burger.addEventListener('click', () => {
-            nav.classList.toggle('nav-active');
-            burger.classList.toggle('toggle');
-        });
-    </script>
+  </main>
 
-    <script>
-        document.querySelector('.scroll-down').addEventListener('click', function (event) {
-            event.preventDefault();
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            targetElement.scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    </script>
+  <footer>
+    <div class="footer-content">
+      <h2 class="footer-message">Let's work together</h2>
+      <div class="footer-actions">
+        <div class="email-actions">
+          <span class="email-text">Email me:</span>
+          <button class="cta-white copy-email-button" id="copyEmailButton">
+            Copy Email
+            <div class="arrow-container">
+              <span class="arrow">→</span>
+            </div>
+          </button>        
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/khoidntran/" target="_blank">LinkedIn</a>
+          <a href="https://www.instagram.com/khoipen/" target="_blank">Instagram</a>
+          <a href="https://www.youtube.com/@khoitran2275" target="_blank">YouTube</a>
+          <a href="https://github.com/dkhol79" target="_blank">GitHub</a>
+        </div>
+        <div class="footer-right">
+          <p>words + images + code ©2025 Khoi Tran</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
+  <script src="cursor.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
