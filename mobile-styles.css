@@ -3,6 +3,7 @@
 /* For very small devices like iPhone SE (max-width: 375px) */
 @media (max-width: 375px) {
     body {
+        cursor: none;
         overflow-x: hidden; /* Prevent horizontal scrolling */
     }
 
@@ -312,6 +313,7 @@
 /* For small mobile devices (376px - 600px) */
 @media (min-width: 376px) and (max-width: 500px) {
     body {
+        cursor: none;
         overflow-x: hidden; /* Prevent horizontal scrolling */
     }
 
@@ -590,6 +592,7 @@
 
 @media (min-width: 501px) and (max-width: 600px) {
     body {
+        cursor: none;
         overflow-x: hidden; /* Prevent horizontal scrolling */
     }
 
@@ -897,6 +900,7 @@
 /* For small devices (601px - 768px) */
 @media (min-width: 601px) and (max-width: 768px) {
     body {
+        cursor: none;
         overflow-x: hidden;
     }
 
@@ -1161,6 +1165,7 @@
 /* For medium devices (769px - 992px) */
 @media (min-width: 769px) and (max-width: 992px) {
     body {
+        cursor: none;
         overflow-x: hidden;
     }
 
@@ -1424,6 +1429,7 @@
 /* For large devices (993px - 1200px) */
 @media (min-width: 993px) and (max-width: 1200px) {
     body {
+        cursor: none;
         overflow-x: hidden;
     }
 
@@ -1686,6 +1692,7 @@
 /* For extra-large devices (>1200px) */
 @media (min-width: 1201px) {
     body {
+        cursor: none;
         overflow-x: hidden;
     }
 
