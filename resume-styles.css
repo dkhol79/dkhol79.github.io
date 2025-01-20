@@ -1,0 +1,887 @@
+@media (max-width: 375px) {
+    /* General cursor styles */
+    .cursor,
+    .cursor-outline {
+        display: block; /* Default is visible */
+    }
+
+    /* Hide cursor elements only for touch devices */
+    body.hide-cursor .cursor,
+    body.hide-cursor .cursor-outline {
+        display: none;
+    }
+
+    header {
+        padding: 10px 20px;
+        box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+        width: 100%; /* Explicitly set width */
+    }
+
+    .nav-menu {
+        flex-shrink: 1; /* Ensures the menu shrinks on smaller screens */
+    }
+    
+    .nav-menu a {
+        font-size: 1rem;
+        white-space: nowrap; /* Prevents wrapping */
+    }
+
+    /* Reset unnecessary margins */
+    header, .nav-menu {
+        margin: 0;
+    }
+
+    #about {
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+        gap: 20px; /* Reduce spacing between elements */
+    }
+
+    /* Header/Nav Fixes */
+    header {
+        padding: 10px 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap; /* Allow the menu to wrap if necessary */
+        overflow-x: hidden; /* Prevent horizontal overflow */
+    }
+
+    .nav-menu a {
+        font-size: 0.8rem;
+        white-space: nowrap; /* Prevent line breaks for menu items */
+        overflow: hidden; /* Prevent overflowing text */
+    }
+
+    .paragraph-title {
+        font-size: 16px;
+    }
+
+    .about-page li {
+        font-size: 16px;
+    }
+
+    /* Content Fixes */
+    .content-row {
+        flex-direction: column; /* Stack all content vertically */
+        gap: 20px; /* Add spacing between stacked items */
+    }
+
+    .column-left, .column-right {
+        width: 100%; /* Ensure columns take full width */
+        flex: none; /* Prevent flex-grow behavior */
+    }
+
+    .column-left p,
+    .column-right p {
+    font-size: 16px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 30px 20px; /* Reduced padding */
+    }
+
+    /* Footer Message */
+    .footer-message {
+        font-size: 5rem; /* Smaller font size */
+        margin-bottom: 10px; /* Reduced margin */
+    }
+
+    /* Footer Actions */
+    .footer-actions {
+        gap: 15px; /* Reduced gap */
+        margin-top: 30px; /* Adjusted margin */
+        margin-bottom: 120px; /* Adjusted margin */
+    }
+
+    /* Email Text */
+    .email-text {
+        font-size: 0.9rem; /* Smaller font size */
+        margin-top: 20px; /* Reduced margin */
+        margin-bottom: 20px; /* Reduced margin */
+    }
+
+    /* Copy Email Button */
+    .copy-email-button {
+        padding: 8px 15px; /* Reduced padding */
+        font-size: 0.9rem; /* Smaller font size */
+        margin-top: 20px; /* Adjusted margin */
+        margin-bottom: 20px; /* Adjusted margin */
+    }
+
+    .copy-email-button .arrow-container {
+        width: 25px; /* Smaller arrow container */
+        height: 25px; /* Smaller arrow container */
+    }
+
+    .copy-email-button .arrow {
+        font-size: 1.2rem; /* Smaller arrow font size */
+    }
+
+    /* Footer Bottom */
+    .footer-bottom {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        margin-top: 20px; /* Reduced margin */
+    }
+
+    /* Social Links */
+    .social-links {
+        display: flex;
+        justify-content: center; /* Center the links horizontally */
+        flex-wrap: wrap; /* Allow wrapping if there are too many links */
+    }
+
+    .social-links a {
+        font-size: 0.9rem; /* Smaller font size */
+        margin-right: 10px; /* Reduced space between links */
+    }
+
+    /* Footer Right */
+    .footer-right {
+        font-size: 0.9rem; /* Smaller font size */
+        text-align: center; /* Center the text */
+        width: 100%; /* Ensure it spans the full width */
+    }
+}
+
+@media (min-width: 376px) and (max-width: 500px) {
+    .cursor,
+    .cursor-outline {
+        display: none; /* Hides the custom cursor elements */
+    }
+    /* Hide cursor elements only for touch devices */
+    body.hide-cursor .cursor,
+    body.hide-cursor .cursor-outline {
+        display: none;
+    }
+
+    header {
+        padding: 15px 30px; /* Slightly increased padding */
+        box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+        width: 100%; /* Explicitly set width */
+    }
+
+    .nav-menu {
+        flex-shrink: 1; /* Ensures the menu shrinks on smaller screens */
+    }
+    
+    .nav-menu a {
+        font-size: 1rem; /* Slightly larger font for this range */
+        white-space: nowrap; /* Prevents wrapping */
+    }
+
+    /* Reset unnecessary margins */
+    header, .nav-menu {
+        margin: 0;
+    }
+
+    #about {
+        padding: 15px 30px; /* Adjust padding for medium screens */
+        gap: 25px; /* Slightly more spacing between elements */
+    }
+
+    .paragraph-title {
+        font-size: 16px; /* Larger font size for titles */
+    }
+
+    .about-page li {
+        font-size: 16px; /* Larger font size for list items */
+    }
+
+    /* Content Fixes */
+    .content-row {
+        flex-direction: column; /* Stack all content vertically */
+        gap: 25px; /* Add spacing between stacked items */
+    }
+
+    .column-left, .column-right {
+        width: 100%; /* Ensure columns take full width */
+        flex: none; /* Prevent flex-grow behavior */
+    }
+
+    .column-left p,
+    .column-right p {
+        font-size: 16px; /* Slightly larger paragraph font size */
+    }
+
+    /* Footer */
+    footer {
+        padding: 30px 20px;
+    }
+
+    .footer-message {
+        font-size: 6rem; /* Reduced font size */
+        margin-bottom: 10px;
+    }
+
+    .footer-actions {
+        gap: 15px;
+        margin-top: 30px;
+        margin-bottom: 120px;
+    }
+
+    .email-text {
+        font-size: 1rem; /* Adjusted font size */
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .copy-email-button {
+        padding: 8px 15px;
+        font-size: 1rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .copy-email-button .arrow-container {
+        width: 25px;
+        height: 25px;
+    }
+
+    .copy-email-button .arrow {
+        font-size: 1.2rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .social-links a {
+        font-size: 0.9rem;
+        margin-right: 10px;
+    }
+
+    .footer-right {
+        font-size: 0.9rem;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 600px) {
+    .cursor,
+    .cursor-outline {
+        display: none; /* Hides the custom cursor elements */
+    }
+    /* Hide cursor elements only for touch devices */
+    body.hide-cursor .cursor,
+    body.hide-cursor .cursor-outline {
+        display: none;
+    }
+
+    header {
+        padding: 20px 40px; /* Increased padding for larger screens */
+        box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+        width: 100%; /* Explicitly set width */
+    }
+
+    .nav-menu {
+        flex-shrink: 1; /* Ensures the menu shrinks on smaller screens */
+    }
+    
+    .nav-menu a {
+        font-size: 1.1rem; /* Slightly larger font for this range */
+        white-space: nowrap; /* Prevents wrapping */
+    }
+
+    /* Reset unnecessary margins */
+    header, .nav-menu {
+        margin: 0;
+    }
+
+    #about {
+        padding: 20px 40px; /* Adjust padding for medium screens */
+        gap: 30px; /* Slightly more spacing between elements */
+    }
+
+    .paragraph-title {
+        font-size: 16px; /* Larger font size for titles */
+    }
+
+    .about-page li {
+        font-size: 16px; /* Larger font size for list items */
+    }
+
+    /* Content Fixes */
+    .content-row {
+        flex-direction: column; /* Stack all content vertically */
+        gap: 30px; /* Add spacing between stacked items */
+    }
+
+    .column-left, .column-right {
+        width: 100%; /* Ensure columns take full width */
+        flex: none; /* Prevent flex-grow behavior */
+    }
+
+    .column-left p,
+    .column-right p {
+        font-size: 16px; /* Slightly larger paragraph font size */
+    }
+
+    /* Footer */
+    footer {
+        padding: 30px 20px; /* Reduced padding */
+    }
+
+    /* Footer Message */
+    .footer-message {
+        font-size: 8rem; /* Smaller font size */
+        margin-bottom: 10px; /* Reduced margin */
+    }
+
+    /* Footer Actions */
+    .footer-actions {
+        gap: 15px; /* Reduced gap */
+        margin-top: 30px; /* Adjusted margin */
+        margin-bottom: 120px; /* Adjusted margin */
+    }
+
+    /* Email Text */
+    .email-text {
+        font-size: 0.9rem; /* Smaller font size */
+        margin-top: 20px; /* Reduced margin */
+        margin-bottom: 20px; /* Reduced margin */
+    }
+
+    /* Copy Email Button */
+    .copy-email-button {
+        padding: 8px 15px; /* Reduced padding */
+        font-size: 0.9rem; /* Smaller font size */
+        margin-top: 20px; /* Adjusted margin */
+        margin-bottom: 20px; /* Adjusted margin */
+    }
+
+    .copy-email-button .arrow-container {
+        width: 25px; /* Smaller arrow container */
+        height: 25px; /* Smaller arrow container */
+    }
+
+    .copy-email-button .arrow {
+        font-size: 1.2rem; /* Smaller arrow font size */
+    }
+
+    /* Footer Bottom */
+    .footer-bottom {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        margin-top: 20px; /* Reduced margin */
+    }
+
+    /* Social Links */
+    .social-links {
+        display: flex;
+        justify-content: center; /* Center the links horizontally */
+        flex-wrap: wrap; /* Allow wrapping if there are too many links */
+    }
+
+    .social-links a {
+        font-size: 0.9rem; /* Smaller font size */
+        margin-right: 10px; /* Reduced space between links */
+    }
+
+    /* Footer Right */
+    .footer-right {
+        font-size: 0.9rem; /* Smaller font size */
+        text-align: center; /* Center the text */
+        width: 100%; /* Ensure it spans the full width */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    .cursor,
+    .cursor-outline {
+        display: none; /* Hides the custom cursor elements */
+    }
+    /* Hide cursor elements only for touch devices */
+    body.hide-cursor .cursor,
+    body.hide-cursor .cursor-outline {
+        display: none;
+    }
+
+    header {
+        padding: 25px 50px; /* Increased padding for larger screens */
+        box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+        width: 100%; /* Explicitly set width */
+    }
+
+    .nav-menu {
+        flex-shrink: 1; /* Ensures the menu shrinks on smaller screens */
+    }
+    
+    .nav-menu a {
+        font-size: 1.2rem; /* Larger font size for readability */
+        white-space: nowrap; /* Prevents wrapping */
+    }
+
+    /* Reset unnecessary margins */
+    header, .nav-menu {
+        margin: 0;
+    }
+
+    #about {
+        padding: 25px 50px; /* Adjust padding for larger screens */
+        gap: 35px; /* Increased spacing between elements */
+    }
+
+    .paragraph-title {
+        font-size: 18px; /* Larger font size for titles */
+    }
+
+    .about-page li {
+        font-size: 18px; /* Larger font size for list items */
+    }
+
+    /* Content Fixes */
+    .content-row {
+        flex-direction: column; /* Stack all content vertically */
+        gap: 35px; /* Add spacing between stacked items */
+    }
+
+    .column-left, .column-right {
+        width: 100%; /* Ensure columns take full width */
+        flex: none; /* Prevent flex-grow behavior */
+    }
+
+    .column-left p,
+    .column-right p {
+        font-size: 18px; /* Larger paragraph font size */
+    }
+
+    /* Footer */
+    footer {
+        padding: 40px 30px;
+    }
+
+    .footer-message {
+        font-size: 6.5rem; /* Adjusted font size */
+        margin-bottom: 15px;
+    }
+
+    .footer-actions {
+        gap: 20px;
+        margin-top: 40px;
+        margin-bottom: 140px;
+    }
+
+    .email-text {
+        font-size: 1.1rem; /* Adjusted font size */
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .copy-email-button {
+        padding: 10px 20px; /* Increased padding */
+        font-size: 1.1rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .copy-email-button .arrow-container {
+        width: 30px;
+        height: 30px;
+    }
+
+    .copy-email-button .arrow {
+        font-size: 1.4rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .social-links a {
+        font-size: 1rem;
+        margin-right: 15px;
+    }
+
+    .footer-right {
+        font-size: 1rem;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .cursor,
+    .cursor-outline {
+        display: none; /* Hides the custom cursor elements */
+    }
+    /* Hide cursor elements only for touch devices */
+    body.hide-cursor .cursor,
+    body.hide-cursor .cursor-outline {
+        display: none;
+    }
+
+    header {
+        padding: 30px 60px; /* Increased padding for wider screens */
+        box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+        width: 100%; /* Explicitly set width */
+    }
+
+    .nav-menu {
+        flex-shrink: 1; /* Ensures the menu shrinks on medium-sized screens */
+    }
+    
+    .nav-menu a {
+        font-size: 1.3rem; /* Slightly larger font size for readability */
+        white-space: nowrap; /* Prevents wrapping */
+    }
+
+    /* Reset unnecessary margins */
+    header, .nav-menu {
+        margin: 0;
+    }
+
+    #about {
+        padding: 30px 60px; /* Adjust padding for larger screens */
+        gap: 40px; /* Increased spacing between elements */
+    }
+
+    .paragraph-title {
+        font-size: 18px; /* Larger font size for titles */
+    }
+
+    .about-page li {
+        font-size: 18px; /* Larger font size for list items */
+    }
+
+    /* Content Fixes */
+    .content-row {
+        flex-direction: column; /* Stack all content vertically */
+        gap: 40px; /* Add spacing between stacked items */
+    }
+
+    .column-left, .column-right {
+        width: 100%; /* Ensure columns take full width */
+        flex: none; /* Prevent flex-grow behavior */
+    }
+
+    .column-left p,
+    .column-right p {
+        font-size: 18px; /* Larger paragraph font size */
+    }
+    
+    footer {
+        padding: 40px 30px;
+    }
+
+    .footer-message {
+        font-size: 6.5rem; /* Adjusted font size */
+        margin-bottom: 15px;
+    }
+
+    .footer-actions {
+        gap: 20px;
+        margin-top: 40px;
+        margin-bottom: 140px;
+    }
+
+    .email-text {
+        font-size: 1.1rem; /* Adjusted font size */
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .copy-email-button {
+        padding: 10px 20px; /* Increased padding */
+        font-size: 1.1rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .copy-email-button .arrow-container {
+        width: 30px;
+        height: 30px;
+    }
+
+    .copy-email-button .arrow {
+        font-size: 1.5rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .social-links a {
+        font-size: 1.1rem;
+        margin-right: 15px;
+    }
+
+    .footer-right {
+        font-size: 1.1rem;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .cursor,
+    .cursor-outline {
+        display: none; /* Hides the custom cursor elements */
+    }
+    /* Hide cursor elements only for touch devices */
+    body.hide-cursor .cursor,
+    body.hide-cursor .cursor-outline {
+        display: none;
+    }
+
+    header {
+        padding: 40px 80px; /* Increased padding for larger screens */
+        box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+        width: 100%; /* Explicitly set width */
+    }
+
+    .nav-menu {
+        flex-shrink: 1; /* Ensures the menu shrinks */
+    }
+    
+    .nav-menu a {
+        font-size: 1.5rem; /* Larger font size for wider screens */
+        white-space: nowrap; /* Prevents wrapping */
+    }
+
+    /* Reset unnecessary margins */
+    header, .nav-menu {
+        margin: 0;
+    }
+
+    #about {
+        padding: 40px 80px; /* Increased padding for about section */
+        gap: 50px; /* Increased spacing between elements */
+    }
+
+    .paragraph-title {
+        font-size: 18px; /* Larger font size for titles */
+    }
+
+    .about-page li {
+        font-size: 18px; /* Larger font size for list items */
+    }
+
+    /* Content Fixes */
+    .content-row {
+        flex-direction: row; /* Place content side by side */
+        gap: 50px; /* Increased spacing between columns */
+    }
+
+    .column-left, .column-right {
+        width: 48%; /* Each column takes half the width */
+        flex: none; /* Prevent flex-grow behavior */
+    }
+
+    .column-left p,
+    .column-right p {
+        font-size: 18px; /* Larger font size for paragraphs */
+    }
+
+    footer {
+        padding: 40px 30px;
+    }
+
+    .footer-message {
+        font-size: 6.5rem; /* Adjusted font size */
+        margin-bottom: 15px;
+    }
+
+    .footer-actions {
+        gap: 20px;
+        margin-top: 40px;
+        margin-bottom: 140px;
+    }
+
+    .email-text {
+        font-size: 1.1rem; /* Adjusted font size */
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .copy-email-button {
+        padding: 10px 20px; /* Increased padding */
+        font-size: 1.1rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .copy-email-button .arrow-container {
+        width: 30px;
+        height: 30px;
+    }
+
+    .copy-email-button .arrow {
+        font-size: 1.4rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .social-links a {
+        font-size: 1rem;
+        margin-right: 15px;
+    }
+
+    .footer-right {
+        font-size: 1rem;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .cursor,
+    .cursor-outline {
+        display: none; /* Hides the custom cursor elements */
+    }
+    /* Hide cursor elements only for touch devices */
+    body.hide-cursor .cursor,
+    body.hide-cursor .cursor-outline {
+        display: none;
+        font-size: 18px; /* Maintain consistent font size */
+    }
+
+    header {
+        padding: 50px 100px; /* Increased padding for larger screens */
+        box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+        width: 100%; /* Explicitly set width */
+    }
+
+    .nav-menu {
+        flex-shrink: 1; /* Ensures the menu shrinks */
+    }
+    
+    .nav-menu a {
+        font-size: 1rem; /* Keep font size consistent */
+        white-space: nowrap; /* Prevents wrapping */
+    }
+
+    /* Reset unnecessary margins */
+    header, .nav-menu {
+        margin: 0;
+    }
+
+    #about {
+        padding: 50px 100px; /* Increased padding for about section */
+        gap: 60px; /* Increased spacing between elements */
+    }
+
+    .paragraph-title {
+        font-size: 18px; /* Keep font size consistent */
+    }
+
+    .about-page li {
+        font-size: 18px; /* Keep font size consistent */
+    }
+
+    /* Content Fixes */
+    .content-row {
+        flex-direction: row; /* Place content side by side */
+        gap: 60px; /* Increased spacing between columns */
+    }
+
+    .column-left, .column-right {
+        width: 48%; /* Each column takes half the width */
+        flex: none; /* Prevent flex-grow behavior */
+    }
+
+    .column-left p,
+    .column-right p {
+        font-size: 18px; /* Keep font size consistent */
+    }
+
+    /* Footer */
+    footer {
+        padding: 40px 30px;
+    }
+
+    .footer-message {
+        font-size: 6.5rem; /* Adjusted font size */
+        margin-bottom: 15px;
+    }
+
+    .footer-actions {
+        gap: 20px;
+        margin-top: 40px;
+        margin-bottom: 140px;
+    }
+
+    .email-text {
+        font-size: 1.1rem; /* Adjusted font size */
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .copy-email-button {
+        padding: 10px 20px; /* Increased padding */
+        font-size: 1.1rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .copy-email-button .arrow-container {
+        width: 30px;
+        height: 30px;
+    }
+
+    .copy-email-button .arrow {
+        font-size: 1.4rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .social-links a {
+        font-size: 1rem;
+        margin-right: 15px;
+    }
+
+    .footer-right {
+        font-size: 1rem;
+        text-align: center;
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="mobile-styles.css" media="screen and (max-width: 1201px)">
+  <link rel="icon" type="image/png" href="assets/Favicon/logo-2.png">
+  <style>
+    .no-cursor {
+      cursor: default;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="gradient-line"></div>
+  <header>
+    <div class="logo">
+        <a href="index.html">
+          <img src="assets/Logo/logo-mark.png" alt="Logo">
+        </a>
+      </div>
+    <nav>
+      <div class="nav-toggle">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <ul class="navigation">
+        <li><a href="#work">work</a></li>
+        <li><a href="about-me.html">about</a></li>
+        <li><a href="#info">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div class="column-left">
+        <img id="profile-pic" src="assets/Pictures/profile-pic.jpg" alt="Profile Picture of Khoi Tran">
+      </div>
+      <div class="column-right">
+        <p>Khoi Tran - EST 1999<p>
+        <h1 class="message">
+            <span class="greeting">Brand</span>
+            <span class="greeting">Designer</span>
+        </h1>
+        <p>
+          A designer who thinks “multi-disciplinary” is a buzzword and wonders why we write bios in third-person. <br><br>
+          I’ve been designing brands and digital experiences for almost a decade, approaching each project with equal parts strategy and style. Currently living in San Diego, CA, and working with the talented team at Five&Done in Orange County. <br><br>
+          When I’m not photosynthesizing in the warm glow of my computer screen, you can find me reading an old book, reorganizing my living space (again), and snacking on an unhealthy amount of Goldfish and trail mix. <br><br>
+          If you have any exciting projects to talk about, or just want to be friends, feel free to hit me up.
+        </p>
+        <button class="cta" onclick="window.location.href='resume.html'">
+            View My Resume
+            <div class="arrow-container">
+              <span class="arrow">→</span>
+            </div>
+          </button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <h2 class="footer-message">Let's work together</h2>
+      <div class="footer-actions">
+        <div class="email-actions">
+          <span class="email-text">Email me:</span>
+          <button class="cta-white copy-email-button" id="copyEmailButton">
+            Copy Email
+            <div class="arrow-container">
+              <span class="arrow">→</span>
+            </div>
+          </button>        
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/khoidntran/" target="_blank">LinkedIn</a>
+          <a href="https://www.instagram.com/khoipen/" target="_blank">Instagram</a>
+          <a href="https://www.youtube.com/@khoitran2275" target="_blank">YouTube</a>
+          <a href="https://github.com/dkhol79" target="_blank">GitHub</a>
+        </div>
+        <div class="footer-right">
+          <p>words + images + code ©2025 Khoi Tran</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="cursor.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
