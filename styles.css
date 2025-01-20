@@ -518,7 +518,7 @@ nav.active .navigation {
 }
 
 .portfolio-item:hover .portfolio-title {
-    color: rgb(189, 246, 189);; /* Optional: You can change the title color when hovering */
+    color: rgb(189, 246, 189);; /* Optional can change the title color when hovering */
 }
 
 /* Portfolio Title */

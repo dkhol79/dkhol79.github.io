@@ -8,7 +8,7 @@ window.addEventListener('scroll', function () {
     const scrollPercent = Math.min(1, scrollY / 200); // Limit to 100% expansion
 
     // Adjust video container width dynamically
-    const videoWidth = 90 + (scrollPercent * 10); // Starting width of 85% to 100% as you scroll
+    const videoWidth = 90 + (scrollPercent * 10); // Starting width of 85% to 100% as scroll
 
     // Apply the new width to the video container
     videoContainer.style.width = `${videoWidth}%`;
