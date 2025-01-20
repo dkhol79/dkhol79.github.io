@@ -41,6 +41,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  if (isTouchDevice) {
+      document.body.classList.add("hide-cursor");
+  }
+});
+
 
 // Portfolio Item Animation
 document.addEventListener("DOMContentLoaded", () => {

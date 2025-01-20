@@ -93,5 +93,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const socialLinks = document.querySelector(".social-links");
       applyHoverEffect(socialLinks);
+
+      const logo = document.querySelectorAll(".logo");
+      logo.forEach(applyHoverEffect);
   });
   

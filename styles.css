@@ -7,16 +7,23 @@
 
 @font-face {
     font-family: 'Kessel105-Book';
-    src: url('assets/fonts/Kessel105Text-Book.otf') format('opentype');
+    src: url('assets/Fonts/Kessel105Text-Book.otf') format('opentype');
     font-weight: normal;
-    font-style: oblique;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'Lischalte';
-    src: url('assets/fonts/lischalte.otf') format('opentype');
-    font-weight: normal;
-    font-style: oblique;
+    font-family: 'Kessel105-Bold';
+    src: url('assets/Fonts/Kessel105Text-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kessel105-Light';
+    src: url('assets/Fonts/Kessel105Text-Light.otf') format('opentype');
+    font-weight: light;
+    font-style: normal;
 }
 
 .gradient-line {
@@ -30,7 +37,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'assets/Font/Kessel105Text-Book.otf', sans-serif;
+    font-family: 'Kessel105-Book', sans-serif;
     background-color: rgb(31, 84, 69);
     color: black;
     position: relative;
@@ -94,10 +101,9 @@ header {
 }
 
 /* General Reset */
-body, ul, li {
+body{
     margin: 0;
     padding: 0;
-    list-style: none;
 }
 
 /* Navigation container */
@@ -107,6 +113,7 @@ nav {
     align-items: center;
     padding: 10px;
 }
+
 
 /* Stacked squares with dots */
 .nav-toggle {
@@ -153,6 +160,7 @@ nav.active .dot:nth-child(3) {
 /* Navigation list (initially hidden) */
 .navigation {
     display: flex;
+    font-family: 'Kessel105-Bold', sans-serif;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
@@ -169,11 +177,13 @@ nav.active .dot:nth-child(3) {
     transition: transform 0.3s ease, opacity 0.3s ease;
     z-index: 10;
     margin-right: 50px;
+    list-style-type: none;
+    transform: scaleX(0) translateY(-15px);
 }
 
 /* Show the navigation when active */
 nav.active .navigation {
-    transform: scaleX(1);  /* Expand the items from the left */
+    transform: scaleX(1) translateY(-15px); /* Expand the items from the left */
     opacity: 1;  /* Make the items visible */
 }
 
@@ -255,6 +265,15 @@ nav.active .navigation {
     display: block;
 }
 
+#profile-pic {
+    width: 600px; /* Adjust as needed for a good portrait size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Make it circular, if desired */
+    object-fit: cover; /* Ensures the image scales well */
+    margin: 70px auto 0 auto;
+    display: block; /* Prevents inline gaps */
+}
+
 .name {
     display: block;
 }
@@ -271,6 +290,7 @@ nav.active .navigation {
 
 .sub-message {
     font-family: 'Kessel105-Book', sans-serif;
+    font-weight: 300;
     font-size: 1.25rem;
     color: rgb(189, 246, 189);
     position: absolute;
@@ -297,7 +317,7 @@ nav.active .navigation {
 .cta, .cta-white {
     display: inline-flex;
     align-items: center;
-    font-family: 'assets/Font/Kessel105Text-Book.otf', sans-serif;
+    font-family: 'Kessel105Text-Book.otf', sans-serif;
     background: none;
     border: 2px solid;
     border-radius: 30px;
@@ -545,7 +565,7 @@ nav.active .navigation {
 }
 
 .portfolio-description {
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 5px; /* Space between title and description */
 }
 
@@ -587,6 +607,86 @@ nav.active .navigation {
     grid-column: span 2; /* Long image for the last row */
 }
 
+
+/* About Section */
+#about {
+    padding: 60px 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.paragraph-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Kessel105-Bold', sans-serif;
+    color: white;
+    margin: 5px 0;
+}
+
+.content-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.column-left {
+    flex: 1;
+}
+
+.column-right {
+    flex: 1;
+}
+
+.column-left p,
+.column-right p {
+    font-size: 1rem;
+    font-weight: light;
+    font-family: 'Kessel105-Book', sans-serif;
+    color: white;
+    margin: 10px 0;
+    line-height: 2;
+}
+
+.column-left h1, .column-left h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: rgb(189, 246, 189);
+}
+
+.column-left a {
+    color: rgb(189, 246, 189);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Scoped styles for unordered list and list items in the about page */
+.about-page ul {
+    margin: 15px 0;
+    padding-left: 40px; /* Indent for bullets */
+    list-style-type: disc !important; /* Force bullet points to show */
+    color: white; /* Text color */
+    line-height: 1.8; /* Adjust line spacing */
+}
+
+.about-page li {
+    margin-bottom: 10px; /* Adds space between bullet points */
+    padding-left: 20px;
+    font-size: 1rem; /* Adjust font size */
+}
+
+.white-space {
+    margin-bottom: 30px; /* Adjust the space as needed */
+}
+
+.separator-line {
+    width: 100%;
+    height: 1px;
+    background-color: #81C784;
+    margin: 40px 0;
+}
+
 footer {
     margin: 0 auto;
     padding: 50px 150px;
@@ -620,7 +720,7 @@ footer {
 
 
 .email-text {
-    font-family: 'assets/Font/Kessel105Text-Book.otf', sans-serif;
+    font-family: 'Kessel105Text-Book.otf', sans-serif;
     font-size: 1.1rem;
     color: rgb(189, 246, 189);
     margin-top: 50px;
@@ -630,7 +730,7 @@ footer {
 .copy-email-button {
     display: inline-flex;
     align-items: center;
-    font-family: 'assets/Font/Kessel105Text-Book.otf', sans-serif;
+    font-family: 'Kessel105-Book.otf', sans-serif;
     background: none;
     border: 2px solid rgb(189, 246, 189);
     border-radius: 30px;
