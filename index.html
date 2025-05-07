@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="scrollbar.css">
   <link rel="stylesheet" href="mobile-styles.css" media="screen and (max-width: 1201px)">
   <link rel="icon" type="image/png" href="assets/Favicon/logo-2.png">
   <style>
@@ -28,9 +29,9 @@
         <div class="dot"></div>
       </div>
       <ul class="navigation">
-        <li><a href="#work">work</a></li>
+        <li><a href="work.html">work</a></li>
+        <li><a href="studio.html">studio</a></li>
         <li><a href="about-me.html">about</a></li>
-        <li><a href="#info">contact</a></li>
       </ul>
     </nav>
   </header>
@@ -39,8 +40,10 @@
     <section class="intro">
       <div class="left-column">
         <h1 class="message">
-          <span class="greeting">Hi, I'm</span>
-          <span class="name">Khoi Tran</span>
+          <div id="greeting">
+            <span>Hi, I'm</span>
+            <span>Khoi Tran</span>
+          </div>
         </h1>
         <div class="right-column">
           <p class="sub-message">
@@ -56,7 +59,7 @@
       </div>
       <div class="right-column"></div>
     </section>
-    
+
     <section class="featured-work">
         <div class="video-container">
           <video autoplay loop muted class="background-video">
@@ -74,12 +77,12 @@
               </button>
             </div>
             <div class="right">
-              <img src="assets/Work/VietNom/Phone-Dual.png" alt="Viet Nom Project Image">
+              <img src="assets/Work/UXUI/VietNom/VN-cover.jpg" alt="Viet Nom Project Image">
             </div>
           </div>
         </div>
     </section>
-    
+
     <section class="message-section">
       <p class="message-text">
         I transform designs into experiences and interactions into engagement.
@@ -87,41 +90,55 @@
     </section>
 
     <section class="portfolio">
-      <div class="portfolio-item">
-        <img src="assets\Work\Diverse Global\Hunna-exploration-phase-2-04.jpg" alt="Diverse Global">
-        <div class="portfolio-title">Project 1</div>
-        <div class="portfolio-description">Description for project 1.</div>
-      </div>
-      <div class="portfolio-item">
-        <img src="assets\Work\Essence\Frame-290.png" alt="Essence Group">
-        <div class="portfolio-title">Project 2</div>
-        <div class="portfolio-description">Description for project 2.</div>
-      </div>
-      <div class="portfolio-item">
-        <img src="assets\Work\Event Garde\Frame-264.png" alt="Event Garde">
-        <div class="portfolio-title">Project 3</div>
-        <div class="portfolio-description">Description for project 3.</div>
-      </div>
-      <div class="portfolio-item long-image">
-        <img src="assets\Work\Fredrick Contruction\Hunna-exploration-phase-2-3-01.jpg" alt="Fredrick Contsruction">
-        <div class="portfolio-title">Project 4</div>
-        <div class="portfolio-description">Description for project 4.</div>
-      </div>
-      <div class="portfolio-item">
-        <img src="assets\Work\Green Well\GW-Mobile.png" alt="Green Well">
-        <div class="portfolio-title">Project 5</div>
-        <div class="portfolio-description">Description for project 5.</div>
-      </div>
-      <div class="portfolio-item">
-        <img src="assets\Work\TIS\Rectangle-595.png" alt="TIS">
-        <div class="portfolio-title">Project 6</div>
-        <div class="portfolio-description">Description for project 6.</div>
-      </div>
-      <div class="portfolio-item">
-        <img src="assets\Work\TIS\Rectangle-595.png" alt="TIS">
-        <div class="portfolio-title">Project 7</div>
-        <div class="portfolio-description">Description for project 6.</div>
-      </div>
+        <div class="portfolio-item">
+          <a href="Pages/diverse-global.html">
+            <img src="assets/Work/UXUI/Diverse-Global/DGC-cover.jpg" alt="Graphic Design Project 1">
+            <div class="portfolio-title">Diverse Global</div>
+            <div class="portfolio-description">A vibrant brand identity for a global diversity initiative.</div>
+          </a>
+        </div>
+        <div class="portfolio-item">
+          <a href="Pages/pietros.html">
+            <img src="assets/Work/Graphic-Design/Pietros/Pietros-cover.jpg" alt="Graphic Design Project 1">
+            <div class="portfolio-title">Pietro's</div>
+            <div class="portfolio-description">A vibrant brand identity for a global diversity initiative.</div>
+          </a>
+        </div>
+        <div class="portfolio-item">
+          <a href="Pages/tis.html">
+            <img src="assets/Work/UXUI/TIS/TIS-cover.png" alt="Graphic Design Project 1">
+            <div class="portfolio-title">The Image Shoppe</div>
+            <div class="portfolio-description">A vibrant brand identity for a global diversity initiative.</div>
+          </a>
+        </div>
+        <div class="portfolio-item">
+          <a href="Pages/sebright.html">
+            <img src="assets/Work/Graphic-Design/Sebright/Sebright-cover.jpg" alt="Graphic Design Project 1">
+            <div class="portfolio-title">Sebright Products Inc.</div>
+            <div class="portfolio-description">A vibrant brand identity for a global diversity initiative.</div>
+          </a>
+        </div>
+        <div class="portfolio-item">
+          <a href="Pages/frederick-construction.html">
+            <img src="assets/Work/UXUI/Fredrick-Construction/FRC-cover.jpg" alt="Graphic Design Project 2">
+            <div class="portfolio-title">Fredrick Construction</div>
+            <div class="portfolio-description">A series of posters for a cultural event.</div>
+          </a>
+        </div>
+        <div class="portfolio-item">
+          <a href="Pages/frederick-construction.html">
+            <img src="assets/Work/UXUI/Green-Well/GW-cover.jpg" alt="Graphic Design Project 3">
+            <div class="portfolio-title">The Green Well</div>
+            <div class="portfolio-description">Comprehensive marketing materials for a construction firm.</div>
+          </a>
+        </div>
+        <div class="portfolio-item long-image">
+          <a href="Pages/frederick-construction.html">
+            <img src="assets/Work/Graphic-Design/GV-Votes/GVSU-Votes-cover.JPG" alt="Graphic Design Project 3">
+            <div class="portfolio-title">Event Garde</div>
+            <div class="portfolio-description">Comprehensive marketing materials for a construction firm.</div>
+          </a>
+        </div>
     </section>
 
   </main>
@@ -137,7 +154,7 @@
             <div class="arrow-container">
               <span class="arrow">→</span>
             </div>
-          </button>        
+          </button>
         </div>
       </div>
       <div class="footer-bottom">
@@ -156,5 +173,6 @@
 
   <script src="cursor.js"></script>
   <script src="scripts.js"></script>
+  <script src="bee.js"></script>
 </body>
 </html>

@@ -19,7 +19,7 @@
     .nav-menu {
         flex-shrink: 1; /* Ensures the menu shrinks on smaller screens */
     }
-    
+
     .nav-menu a {
         font-size: 1rem;
         white-space: nowrap; /* Prevents wrapping */
@@ -29,14 +29,14 @@
     header, .nav-menu {
         margin: 0;
     }
-    
+
     .intro {
         flex-direction: column; /* Stack the elements vertically */
         padding: 10px 20px; /* Matches header padding */
         align-items: flex-start; /* Align content to the left */
         margin-top: 20px;
         margin-bottom: 50px;
-    }    
+    }
 
     .left-column, .right-column {
         flex: none; /* Reset flex properties for both columns */
@@ -127,19 +127,19 @@
 
     /* Project Title */
     .project-title {
-        font-size: 24px; /* Smaller font size */
+        font-size: 1.5rem; /* Smaller font size */
         font-weight: bold;
         margin-bottom: 10px;
     }
 
     /* Project Description */
     .project-description {
-        font-size: 16px; /* Smaller font size */
+        font-size: 1rem; /* Smaller font size */
         line-height: 1.5;
         margin-bottom: 20px;
     }
 
-    /* Right Column - Image */
+    /* Right Column - Image мое */
     .right {
         width: 100%; /* Full width */
         margin-top: 20px; /* Space between text and image */
@@ -165,7 +165,7 @@
         width: 100%; /* Full width on scroll */
     }
 
-    
+
     /* New Message Section */
     .message-section {
         background: none;
@@ -196,7 +196,7 @@
 
     /* Portfolio Title */
     .portfolio-title {
-        font-size: 14px; /* Smaller font size for smaller screens */
+        font-size: 0.875rem; /* Smaller font size for smaller screens */
         font-weight: bold;
         margin-top: 5px; /* Reduced space between image and title */
         display: block; /* Ensures proper alignment in smaller view */
@@ -216,7 +216,7 @@
     }
 
     .portfolio-description {
-        font-size: 12px; /* Smaller font size for smaller screens */
+        font-size: 0.75rem; /* Smaller font size for smaller screens */
         margin-top: 5px; /* Reduced space between title and description */
         text-align: left; /* Left-align text */
         width: 100%; /* Full width */
@@ -238,7 +238,7 @@
     }
 
     .portfolio-item.long-image {
-        grid-column: 1; /* Stacks long images in a single column */
+        grid-column: 1; /* Stacks long frog in a single column */
     }
 
     /* Footer */
@@ -308,7 +308,6 @@
         text-align: center; /* Center the text */
         width: 100%; /* Ensure it spans the full width */
     }
-
 }
 
 
@@ -332,7 +331,7 @@
     .nav-menu {
         flex-shrink: 1;
     }
-    
+
     .nav-menu a {
         font-size: 1rem; /* Adjust font size */
         white-space: nowrap;
@@ -433,13 +432,13 @@
     }
 
     .project-title {
-        font-size: 22px; /* Adjusted font size */
+        font-size: 1.375rem; /* Adjusted font size */
         font-weight: bold;
         margin-bottom: 10px;
     }
 
     .project-description {
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 1.5;
         margin-bottom: 20px;
     }
@@ -492,7 +491,7 @@
     }
 
     .portfolio-title {
-        font-size: 16px; /* Slightly larger font size */
+        font-size: 1rem; /* Slightly larger font size */
         font-weight: bold;
         margin-top: 5px;
         display: block;
@@ -512,7 +511,7 @@
     }
 
     .portfolio-description {
-        font-size: 14px; /* Increased font size */
+        font-size: 0.875rem; /* Increased font size */
         margin-top: 5px;
         text-align: left;
         width: 100%;
@@ -614,7 +613,7 @@
     .nav-menu {
         flex-shrink: 1; /* Ensures the menu shrinks on smaller screens */
     }
-    
+
     .nav-menu a {
         font-size: 1rem;
         white-space: nowrap; /* Prevents wrapping */
@@ -624,14 +623,14 @@
     header, .nav-menu {
         margin: 0;
     }
-    
+
     .intro {
         flex-direction: column; /* Stack the elements vertically */
         padding: 10px 20px; /* Matches header padding */
         align-items: flex-start; /* Align content to the left */
         margin-top: 20px;
         margin-bottom: 50px;
-    }    
+    }
 
     .left-column, .right-column {
         flex: none; /* Reset flex properties for both columns */
@@ -722,14 +721,14 @@
 
     /* Project Title */
     .project-title {
-        font-size: 24px; /* Smaller font size */
+        font-size: 1.5rem; /* Smaller font size */
         font-weight: bold;
         margin-bottom: 10px;
     }
 
     /* Project Description */
     .project-description {
-        font-size: 16px; /* Smaller font size */
+        font-size: 1rem; /* Smaller font size */
         line-height: 1.5;
         margin-bottom: 20px;
     }
@@ -760,7 +759,7 @@
         width: 100%; /* Full width on scroll */
     }
 
-    
+
     /* New Message Section */
     .message-section {
         background: none;
@@ -791,7 +790,7 @@
 
     /* Portfolio Title */
     .portfolio-title {
-        font-size: 14px; /* Smaller font size for smaller screens */
+        font-size: 0.875rem; /* Smaller font size for smaller screens */
         font-weight: bold;
         margin-top: 5px; /* Reduced space between image and title */
         display: block; /* Ensures proper alignment in smaller view */
@@ -811,7 +810,7 @@
     }
 
     .portfolio-description {
-        font-size: 12px; /* Smaller font size for smaller screens */
+        font-size: 0.75rem; /* Smaller font size for smaller screens */
         margin-top: 5px; /* Reduced space between title and description */
         text-align: left; /* Left-align text */
         width: 100%; /* Full width */
@@ -833,7 +832,7 @@
     }
 
     .portfolio-item.long-image {
-        grid-column: 1; /* Stacks long images in a single column */
+        grid-column: 1; /* Stacks long frog in a single column */
     }
 
     /* Footer */
@@ -926,7 +925,7 @@
     .nav-menu {
         flex-shrink: 1;
     }
-    
+
     .nav-menu a {
         font-size: 1.1rem; /* Slightly larger font size */
         white-space: nowrap;
@@ -1028,13 +1027,13 @@
     }
 
     .project-title {
-        font-size: 24px; /* Adjusted font size */
+        font-size: 1.5rem; /* Adjusted font size */
         font-weight: bold;
         margin-bottom: 15px;
     }
 
     .project-description {
-        font-size: 18px; /* Slightly larger font size */
+        font-size: 1.125rem; /* Slightly larger font size */
         line-height: 1.5;
         margin-bottom: 20px;
     }
@@ -1079,7 +1078,7 @@
     }
 
     .portfolio-title {
-        font-size: 18px; /* Slightly larger font size */
+        font-size: 1.125rem; /* Slightly larger font size */
         font-weight: bold;
         margin-top: 10px;
         display: block;
@@ -1099,7 +1098,7 @@
     }
 
     .portfolio-description {
-        font-size: 16px; /* Adjusted font size */
+        font-size: 1rem; /* Adjusted font size */
         margin-top: 10px;
         text-align: left;
         width: 100%;
@@ -1194,7 +1193,7 @@
     .nav-menu {
         flex-shrink: 1;
     }
-    
+
     .nav-menu a {
         font-size: 1.1rem; /* Slightly larger font size */
         white-space: nowrap;
@@ -1296,13 +1295,13 @@
     }
 
     .project-title {
-        font-size: 35px; /* Adjusted font size */
+        font-size: 2.1875rem; /* Adjusted font size */
         font-weight: bold;
         margin-bottom: 15px;
     }
 
     .project-description {
-        font-size: 18px; /* Slightly larger font size */
+        font-size: 1.125rem; /* Slightly larger font size */
         line-height: 1.5;
         margin-bottom: 20px;
     }
@@ -1347,7 +1346,7 @@
     }
 
     .portfolio-title {
-        font-size: 35px; /* Slightly larger font size */
+        font-size: 2.1875rem; /* Slightly larger font size */
         font-weight: bold;
         margin-top: 10px;
         display: block;
@@ -1367,7 +1366,7 @@
     }
 
     .portfolio-description {
-        font-size: 18px; /* Adjusted font size */
+        font-size: 1.125rem; /* Adjusted font size */
         margin-top: 10px;
         text-align: left;
         width: 100%;
@@ -1461,7 +1460,7 @@
     .nav-menu {
         flex-shrink: 1;
     }
-    
+
     .nav-menu a {
         font-size: 1.1rem; /* Slightly larger font size */
         white-space: nowrap;
@@ -1562,13 +1561,13 @@
     }
 
     .project-title {
-        font-size: 24px; /* Adjusted font size */
+        font-size: 1.5rem; /* Adjusted font size */
         font-weight: bold;
         margin-bottom: 15px;
     }
 
     .project-description {
-        font-size: 18px; /* Slightly larger font size */
+        font-size: 1.125rem; /* Slightly larger font size */
         line-height: 1.5;
         margin-bottom: 20px;
     }
@@ -1613,7 +1612,7 @@
     }
 
     .portfolio-title {
-        font-size: 18px; /* Slightly larger font size */
+        font-size: 1.125rem; /* Slightly larger font size */
         font-weight: bold;
         margin-top: 10px;
         display: block;
@@ -1633,7 +1632,7 @@
     }
 
     .portfolio-description {
-        font-size: 16px; /* Adjusted font size */
+        font-size: 1rem; /* Adjusted font size */
         margin-top: 10px;
         text-align: left;
         width: 100%;
@@ -1728,7 +1727,7 @@
     .nav-menu {
         flex-shrink: 1;
     }
-    
+
     .nav-menu a {
         font-size: 1.1rem; /* Slightly larger font size */
         white-space: nowrap;
@@ -1829,13 +1828,13 @@
     }
 
     .project-title {
-        font-size: 24px; /* Adjusted font size */
+        font-size: 1.5rem; /* Adjusted font size */
         font-weight: bold;
         margin-bottom: 15px;
     }
 
     .project-description {
-        font-size: 18px; /* Slightly larger font size */
+        font-size: 1.125rem; /* Slightly larger font size */
         line-height: 1.5;
         margin-bottom: 20px;
     }
@@ -1880,7 +1879,7 @@
     }
 
     .portfolio-title {
-        font-size: 18px; /* Slightly larger font size */
+        font-size: 1.125rem; /* Slightly larger font size */
         font-weight: bold;
         margin-top: 10px;
         display: block;
@@ -1900,7 +1899,7 @@
     }
 
     .portfolio-description {
-        font-size: 16px; /* Adjusted font size */
+        font-size: 1rem; /* Adjusted font size */
         margin-top: 10px;
         text-align: left;
         width: 100%;

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diverse Global</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../scrollbar.css">
+  <link rel="stylesheet" href="../mobile-styles.css" media="screen and (max-width: 1201px)">
+  <link rel="stylesheet" href="work.css">
+  <link rel="stylesheet" href="work-mobile.css" media="screen and (max-width: 1201px)">
+  <link rel="icon" type="image/png" href="../assets/Favicon/logo-2.png">
+  <style>
+    .no-cursor {
+      cursor: default;
+    }
+  </style>
+</head>
+<body>
+  <div class="gradient-line"></div>
+  <header>
+    <div class="logo">
+      <a href="../index.html">
+        <img src="../assets/Logo/logo-mark.png" alt="Logo">
+      </a>
+    </div>
+    <nav>
+      <div class="nav-toggle">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <ul class="navigation">
+        <li><a href="../work.html">work</a></li>
+        <li><a href="../studio.html">studio</a></li>
+        <li><a href="../about-me.html">about</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-hero">
+      <div class="project-header">
+        <h2 class="company-name">Froggy Game</h2>
+        <h1 class="project-title">Evolving from the Classic: Design and Architecture</h1>
+        <div class="project-tags">
+          <span class="tag">Game Design</span>
+          <span class="tag">Software Development</span>
+          <span class="tag">Computer Programming</span>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="../assets/Work/Games/Froggy/Froggy-game-2.jpg" alt="From Friction to Flow">
+      </div>
+    </section>
+
+    <section class="project-details">
+      <div class="details-container">
+        <div class="column-left">
+          <h3 class="work-section-title">Overview</h3>
+          <p>In this project, I make a Froggy Game with the goal of delivering an exciting and fun gaming experience while also making sure the codebase remains modular and easy to maintain. The game is inspired by the Crossy Game and Frogger, with the old-school feel combined with new improvements. One of the coolest features is the revised snake design, which draws from my prior Snake Game but with improved graphics and a smoother frame rate. This helps the gameplay feel more fluid and enjoyable.</p>
+          <p>The architecture of the game is built around the separation of concerns and making sure each part of the game is reusable and clear. This means each class has its specific responsibility in the game such as managing the frog's movements or handling snakes, which keep everything organized. In such a way, this makes the game much easier to be updated and maintained later on. It's something like building with Lego blocks: each part fits together, and if I want to add something or correct something, I don't have to tear it all down and be confused when I look at my previous Snake Game.</p>
+          <p>To have the code flexible and growable but not become a mess, I followed the design principles according to the Gang of Four design patterns. These patterns help the game stay robust and adaptable so that future changes or additions to the game can be made without breaking the existing code. It's all about building a solid foundation now, so the game can continue to evolve in the future whether it's adding new challenges, better graphics, or even expanding the gameplay mechanics.</p>
+          <a href="https://diverseglobal.com/" class="cta-dark" target="_blank">
+            View Live Site
+            <div class="arrow-container">
+              <span class="arrow">→</span>
+            </div>
+          </a>
+        </div>
+        <div class="column-middle">
+          <h3 class="work-section-title">My Role</h3>
+          <ul>
+            <li>Game Illustrator</li>
+            <li>Developer and Programmer</li>
+          </ul>
+          <h3 class="work-section-title">Language</h3>
+          <ul>
+            <li>Python</li>
+          </ul>
+        </div>
+        <div class="column-right">
+          <h3 class="work-section-title">Personality</h3>
+          <ul>
+            <li>Fun</li>
+            <li>Intuitive Control</li>
+            <li>Engaging</li>
+          </ul>
+          <h3 class="work-section-title">Completed</h3>
+          <p>Fall 2023</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="process-section">
+      <div class="process-container">
+        <div class="process-left">
+          <span class="section-label">Overall Game Structure</span>
+          <h3 class="work-section-title">Froggy Game Class Diagram</h3>
+          <p>I divide the game’s functionality into three main categories: Main Application, Game Components, and Scenes, supported by Utilities and Effects. These categories group related classes together, following the principle of cohesion, where each class and module has a well defined purpose. This structure makes sure that future me can easily locate and modify code relevant to a specific feature or functionality. </p>
+        </div>
+        <div class="process-right">
+          <div class="process-image">
+            <img src="../assets/Work/Games/Froggy/ClassDiagram_FroggyGame.png" alt="GV Votes Wireframe">
+          </div>
+        </div>
+      </div>
+      <div class="process-container">
+        <div class="process-left">
+          <h3 class="work-section-title">Main Object  Diagram</h3>
+          <p>The Main class acts as the entry point of the application. It initializes the game, manages the transitions between scenes (like the opening menu and game over screen), and keeps the gameplay flow organized. The scene-based design follows the State Pattern, as the game changes its behavior depending on the current state or scene (e.g., OpenScene, BoardGame, GameOverScene).</p>
+        </div>
+        <div class="process-right">
+          <div class="process-image">
+            <img src="../assets/Work/Games/Froggy/ObjectDiagram_Main.png" alt="GV Votes Prototype">
+          </div>
+        </div>
+      </div>
+      <div class="process-container">
+        <div class="process-left">
+          <span class="section-label">Game Components</span>
+          <h3 class="work-section-title">BoardGame Object Diagram</h3>
+          <p>The Frog starts in the middle of the bottom part of the board game. Snails are generated on top of bushes, and I designed them so that they don’t leave the bush. The Snakes are generated randomly with various shades of green, length and speed. They can’t go through big bushes, so they have to detour. To avoid snakes getting stuck, bushes are calculated so that when they are generated, the gap between different groups of bushes are at least the snake size.</p>
+          <p>The core mechanics of the game are wrapped in the BoardGame class. This class acts as the heart of the gameplay, combining the frog, challenges, and game objects together. BoardGame manages the interactions between components, including the placement of bushes, the movement of the frog, and the appearance of snails. Each of these components is controlled by a class, making it easier to add new mechanics or adjust existing ones.</p>
+        </div>
+        <div class="process-right">
+          <div class="process-image">
+            <img src="../assets/Work/Games/Froggy/ObjectDiagram_BoardGame.png" alt="GV Votes Wireframe">
+          </div>
+        </div>
+      </div>
+      <div class="process-container">
+        <div class="process-left">
+          <h3 class="work-section-title">Frog Object Diagram</h3>
+          <p>The Frog class is modular, wrapping behaviors like movement, sprite management, and tongue animations. It uses patterns like Factory Method for sprite loading, State Pattern for tongue animation, and Strategy for dynamic sprite updates. Encapsulation makes sure a clear interface, while sticking to the Single Responsibility and Open-Closed principles. Its design is scalable and reusable, supporting future extensions like new actions or behaviors without modifying existing functionality, ensuring maintainability and adaptability.</p>
+        </div>
+        <div class="process-right">
+          <div class="process-image">
+            <img src="../assets/Work/Games/Froggy/ObjectDiagram_Frog.png" alt="GV Votes Prototype">
+          </div>
+        </div>
+      </div>
+      <div class="process-container">
+        <div class="process-left">
+          <h3 class="work-section-title">Bush Object Diagram</h3>
+          <p>The Bush class is encapsulated in maintaining its position, size, and appearance, while the static method for loading images applies the Factory Method Pattern, centralizing bush image creation. BushGenerator introduces a strategy for scattering bushes. This creates proper placement through validation. This design sticks to the Single Responsibility Principle by separating bush behavior from generation logic, making the system modular, reusable, and adaptable to changes like new placement rules or bush types.</p>
+        </div>
+        <div class="process-right">
+          <div class="process-image">
+            <img src="../assets/Work/Games/Froggy/ObjectDiagram_Bush.png" alt="GV Votes Prototype">
+          </div>
+        </div>
+      </div>
+      <div class="process-container">
+        <div class="process-left">
+          <h3 class="work-section-title">Snail Object Diagram</h3>
+          <p>Similarly, the Snail class demonstrates encapsulation by managing a snail's appearance, movement, and animation within a single unit. It applies the State Pattern to manage direction changes and sprite updates based on time, ensuring smooth animations. The SnailGenerator separates the logic for placing snails on bushes, adhering to the Single Responsibility Principle. By centralizing generation, it uses a Factory Method-like approach to create snails dynamically, ensuring modularity. This design enables flexible customization and cleanly integrates with the game's bush-based environment.</p>
+        </div>
+        <div class="process-right">
+          <div class="process-image">
+            <img src="../assets/Work/Games/Froggy/ObjectDiagram_Snail.png" alt="GV Votes Prototype">
+          </div>
+          <div class="process-image">
+            <img src="../assets/Work/Games/Froggy/ObjectDiagram_Snake.png" alt="GV Votes Prototype">
+          </div>
+        </div>
+      </div>
+      <div class="process-container">
+        <div class="process-left">
+          <h3 class="work-section-title">ChallengeManager Object Diagram</h3><p>The ChallengeManager introduces challenges like TimeChallenge and FoodChallenge to diversify gameplay. Each challenge class has specific logic, promoting adherence to the Single Responsibility Principle. This separation of concerns ensures that updates to one type of challenge will not affect others.</p>
+        </div>
+        <div class="process-right">
+          <div class="process-image">
+            <img src="../assets/Work/Games/Froggy/ObjectDiagram_ChallengeManager.png" alt="GV Votes Prototype">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="web-design-section">
+      <div class="web-design-container">
+        <div class="web-design-left">
+          <span class="section-label">Game Design</span>
+          <h3 class="work-section-title">Scenes</h3>
+          <p>The scene-based architecture simplifies transitions and focuses on specific game states. The OpenScene displays the game's opening screen with animations, while the GameOverScene manages the behavior after the player loses. These classes use helper functions from the Effects module for common visual elements like popups and animations, ensuring reusability and reducing redundancy.</p>
+          <p>The use of scenes follows the Strategy Pattern because the behavior of the game changes based on the active scene. This modularity allows future me to add new scenes, such as a settings menu or a pause screen, without altering the core game logic.</p>
+        </div>
+        <div class="web-design-right">
+          <div class="web-design-image-container">
+            <div class="web-design-image">
+              <img src="../assets/Work/Games/Froggy/Froggy-open-scene.jpg" alt="Web Design">
+            </div>
+            <div class="web-design-image">
+              <img src="../assets/Work/Games/Froggy/Froggy-challenge.jpg" alt="Web Design">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="digital-experience-section">
+      <div class="digital-experience-container">
+        <div class="digital-experience-left">
+          <div class="digital-experience-image">
+            <img src="../assets/Work/Games/Froggy/Froggy-game-3.jpg" alt="Digital Experience">
+          </div>
+        </div>
+        <div class="digital-experience-right">
+          <h3 class="work-section-title">Utilities and Effects</h3>
+          <p>The Background, SnakeDrawer, and InfoBoard classes handle auxiliary tasks such as drawing backgrounds, managing snake visuals, and displaying player information. These components are isolated to prevent clutter in the main game logic. The Effects module centralizes common visual tasks like loading images, creating animations, and drawing buttons. This organization ensures that visual changes are made in one place, following the Facade Pattern by providing a simplified interface for complex rendering operations.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <h2 class="footer-message">Let's work together</h2>
+      <div class="footer-actions">
+        <div class="email-actions">
+          <span class="email-text">Email me:</span>
+          <button class="cta-white copy-email-button" id="copyEmailButton">
+            Copy Email
+            <div class="arrow-container">
+              <span class="arrow">→</span>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/khoidntran/" target="_blank">LinkedIn</a>
+          <a href="https://www.instagram.com/khoipen/" target="_blank">Instagram</a>
+          <a href="https://www.youtube.com/@khoitran2275" target="_blank">YouTube</a>
+          <a href="https://github.com/dkhol79" target="_blank">GitHub</a>
+        </div>
+        <div class="footer-right">
+          <p>words + images + code ©2025 Khoi Tran</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../cursor.js"></script>
+  <script src="../scripts.js"></script>
+</body>
+</html>

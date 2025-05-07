@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algorithm in RPG Games</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../scrollbar.css">
+  <link rel="stylesheet" href="../mobile-styles.css" media="screen and (max-width: 1201px)">
+  <link rel="stylesheet" href="work.css">
+  <link rel="stylesheet" href="work-mobile.css" media="screen and (max-width: 1201px)">
+  <link rel="icon" type="image/png" href="../assets/Favicon/logo-2.png">
+  <style>
+    .no-cursor {
+      cursor: default;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="../index.html">
+        <img src="../assets/Logo/logo-mark.png" alt="Logo">
+      </a>
+    </div>
+    <nav>
+      <div class="nav-toggle" role="button" aria-label="Toggle navigation" tabindex="0">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <ul class="navigation">
+        <li><a href="../work.html">work</a></li>
+        <li><a href="../studio.html">studio</a></li>
+        <li><a href="../about-me.html">about</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-hero">
+      <div class="project-header">
+        <h2 class="company-name">Algorithm in RPG Games</h2>
+        <h1 class="project-title">Adaptive Generative Difficulty</h1>
+        <div class="project-tags">
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Game Design</span>
+          <span class="tag">Concept Development</span>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="../assets/Work/Algorithm/LegendOfDaiViet/Algorithm-cover.jpg" alt="Adaptive Generative Difficulty">
+      </div>
+    </section>
+
+    <section class="project-details">
+      <div class="details-container">
+        <div class="column-left">
+          <h3 class="work-section-title">Overview</h3>
+          <p>This project introduces an adaptive generative difficulty algorithm that adjusts a game's difficulty based on player behavior and performance, using player modeling, playstyle inference, and adaptive adjustments. The system monitors stats such as hit rate, damage taken, resource usage, and exploration habits to fine-tune enemy behavior and abilities. This helps keep the challenge at an optimal level and make sure players stay engaged without feeling frustrated or bored. The scalability, flexibility, and capacity of the algorithm to tailor gaming experiences are also underscored.</p>
+          <a href="../assets/Work/Algorithm/LegendOfDaiViet/Adaptive-Generative-Algorithm.pdf" class="cta-dark" target="_blank" rel="noopener">
+            View Full Document
+            <div class="arrow-container">
+              <span class="arrow">→</span>
+            </div>
+          </a>
+        </div>
+        <div class="column-middle">
+          <h3 class="work-section-title">My Role</h3>
+          <ul>
+            <li>Programmer and Developer</li>
+          </ul>
+          <h3 class="work-section-title">Language</h3>
+          <ul>
+            <li>Python</li>
+          </ul>
+        </div>
+        <div class="column-right">
+          <h3 class="work-section-title">Tool</h3>
+          <ul>
+            <li>Pygame</li>
+          </ul>
+          <h3 class="work-section-title">Completed</h3>
+          <p>Fall 2023</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="introduction-section">
+      <div class="introduction-container">
+        <div class="introduction-left">
+          <span class="section-label">Introduction</span>
+          <h3 class="work-section-title">Context and Background</h3>
+          <p>Video games aim to balance challenge and enjoyment, aligning with Csikszentmihalyi’s flow theory (1990). Traditional difficulty systems use static presets or manual tweaks, often missing the mark for diverse player skills and styles. Dynamic Difficulty Adjustment (DDA), seen in games like Left 4 Dead (Valve, 2008) and Resident Evil 4 (Capcom, 2005), adjusts parameters in real-time but typically lacks depth, relying on basic metrics like health or time. This Python Adaptive Generative Difficulty Algorithm (AGDA) improves DDA by considering hit accuracy, damage taken, resource usage, and discovery, inferring playstyles (defensive or aggressive). It adjusts monster stats and player skills dynamically, using momentum and trend analysis for smooth, cohesive gameplay transitions.</p>
+        </div>
+        <div class="introduction-right">
+          <h3 class="work-section-title">Research Problem & Thesis</h3>
+          <p>Most DDA techniques narrowly focus on either performance (e.g., hits or damage) or behavior (e.g., aggression) without integrating both into one adaptive system. Most also cannot effectively manage gradual difficulty changes, disrupting immersion. This research tries to overcome this limitation by developing an algorithm that integrates performance metrics and inferred actions to adjust multiple game elements continuously so that the overall experience is engaging and natural and adapted to the player. The question is: How can game difficulty smoothly and finely adapt to keep pace with a player's shifting skills and habits? The goal is to illustrate this method enhances satisfaction and personalizes gaming.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="experiment-section">
+      <div class="experiment-container">
+        <span class="section-label">Experiment Setup</span>
+        <h3 class="work-section-title">Methodology & Performance Tracking</h3>
+        <div class="experiment-content">
+          <div class="experiment-text">
+            <p>The environment setup tested the Adaptive Generative Difficulty Algorithm (AGDA) against a player and monsters with varying stats (e.g., hit points, speed, attack rate, recognize range) under a simulated game environment. The player tracker monitored hit points, hit rate, damage taken, use of resources, and exploration. Player action was simulated probabilistically according to different aggressive, defensive, or balanced playstyles, with weights like 70% attack for aggressive and 50% dodge for defensive. Each test run was 150 steps long, with AGDA dynamically adjusting difficulty step by step based on trends in performance.</p>
+            <p>AGDA continuously kept track of statistics such as the player's attack success rate (hit percentage), the damage they took (percentage of maximum health), resource use (e.g., healing items used), and depth of exploration (percentage of world discovered). These figures tracked fight and strategic moves, scribbled down each move into a 30-step history buffer. This buffer let trend analysis, such as hit accuracy or damage frequency adjustment, catch if the player was getting better or struggling.</p>
+          </div>
+          <div class="experiment-image">
+            <img src="../assets/Work/Algorithm/LegendOfDaiViet/full-decision-chart-2.png" alt="Decision Tree Diagram">
+            <p class="image-caption">Decision tree for AGDA's difficulty adjustment logic.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="results-section">
+      <div class="results-container">
+        <span class="section-label">Results</span>
+        <h3 class="work-section-title">Performance Analysis</h3>
+        <div class="results-content">
+          <div class="results-image">
+            <img src="../assets/Work/Algorithm/LegendOfDaiViet/Algorithm-graph.jpg" alt="Playstyle Performance Graph">
+            <p class="image-caption">Graph showing AGDA's adaptation over 150 steps with an aggressive playstyle.</p>
+          </div>
+          <div class="results-text">
+            <p>The graph provides a view of how AGDA successfully adjusts the game experience over 150 simulation steps with an aggressive playstyle, tracking Hits (green), Misses (red), Recent Damage Taken (black), and Hit Accuracy (blue).</p>
+            <ul>
+              <li><strong>Early Game (Steps 0–40):</strong> The player struggles, with Recent Damage Taken peaking at 600–700 and Hit Accuracy falling from 0.6 to 0.4. The algorithm lowers difficulty, reducing damage taken to 200–300 by step 40.</li>
+              <li><strong>Mid Game (Steps 40–80):</strong> Hit Accuracy improves to 0.6, and Recent Damage Taken remains low at 200–300. The algorithm maintains a balanced challenge, supporting player growth.</li>
+              <li><strong>Late Game (Steps 80–150):</strong> Hit Accuracy rises to 0.8–0.9, and Recent Damage Taken increases to 300–500 as difficulty ramps up. The player maintains high accuracy, showing effective scaling.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="future-work-section">
+      <div class="future-work-container">
+        <span class="section-label">Future Work</span>
+        <h3 class="work-section-title">Next Steps</h3>
+        <ul class="future-work-list">
+          <li><strong>Multi-Player Adaptation:</strong> Adjust the algorithm to support multiple players in co-op or competitive scenarios for more dynamic gameplay.</li>
+          <li><strong>Granular Difficulty Scaling:</strong> Expand difficulty adjustments to include environmental threats or narrative-induced challenges.</li>
+          <li><strong>User Customization:</strong> Allow players to control difficulty adjustment levels to attract a broader audience.</li>
+          <li><strong>Real-World Testing:</strong> Integrate AGDA into a commercial game engine to validate scalability and user acceptance.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="bibliography-section">
+      <div class="bibliography-container">
+        <span class="section-label">Bibliography</span>
+        <h3 class="work-section-title">References</h3>
+        <ul class="bibliography-list">
+          <li>Hunicke, R., & Chapman, V. (2004). "AI for Dynamic Difficulty Adjustment in Games." <em>Proceedings of the AAAI Workshop on Challenges in Game AI</em>.</li>
+          <li>Adams, E. (2010). <em>Fundamentals of Game Design</em> (2nd ed.). New Riders.</li>
+          <li>Abramowitz, M., & Stegun, I. A. (Eds.). (1972). <em>Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables</em>. Dover Publications.</li>
+          <li>Astrom, K. J., & Wittenmark, B. (1995). <em>Adaptive Control</em> (2nd ed.). Addison-Wesley.</li>
+          <li>Sutton, R. S., & Barto, A. G. (2018). <em>Reinforcement Learning: An Introduction</em> (2nd ed.). MIT Press.</li>
+          <li>Yannakakis, G. N., & Togelius, J. (2018). <em>Artificial Intelligence and Games</em>. Springer.</li>
+          <li>Drachen, A., Canossa, A., & Yannakakis, G. N. (2009). "Player Modeling using Self-Organization in Games."</li>
+          <li>Gardiner, C. W. (2009). <em>Stochastic Methods: A Handbook for the Natural and Social Sciences</em> (4th ed.). Springer.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <h2 class="footer-message">Let's work together</h2>
+      <div class="footer-actions">
+        <div class="email-actions">
+          <span class="email-text">Email me:</span>
+          <button class="cta-white copy-email-button" id="copyEmailButton">
+            Copy Email
+            <div class="arrow-container">
+              <span class="arrow">→</span>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/khoidntran/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.instagram.com/khoipen/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.youtube.com/@khoitran2275" target="_blank" rel="noopener">YouTube</a>
+          <a href="https://github.com/dkhol79" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <div class="footer-right">
+          <p>words + images + code ©2025 Khoi Tran</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Restore scroll position on page load
+    window.addEventListener('load', () => {
+      const scrollPosition = sessionStorage.getItem('scrollPosition');
+      if (scrollPosition) {
+        window.scrollTo(0, parseInt(scrollPosition));
+      }
+    });
+
+    // Save scroll position before page unload
+    window.addEventListener('beforeunload', () => {
+      sessionStorage.setItem('scrollPosition', window.scrollY);
+    });
+  </script>
+  <script src="../cursor.js"></script>
+  <script src="../scripts.js"></script>
+</body>
+</html>

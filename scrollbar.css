@@ -1,0 +1,29 @@
+/* Custom Scrollbar for WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 8px; /* Thin scrollbar */
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+    background: rgba(31, 84, 69, 0.8); /* Matches body background with slight transparency */
+    border-radius: 4px;
+}
+
+/* Scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #16b28b, #81c784); /* Gradient inspired by site’s aesthetic */
+    border-radius: 4px;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+/* Hover effect on thumb */
+::-webkit-scrollbar-thumb:hover {
+    transform: scale(1.2); /* Slightly enlarge on hover */
+    background: linear-gradient(90deg, #a4eca7, #16b28b); /* Reverse gradient for visual feedback */
+}
+
+/* Firefox scrollbar */
+html {
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: #16b28b rgba(31, 84, 69, 0.8); /* Thumb color and track color */
+}
