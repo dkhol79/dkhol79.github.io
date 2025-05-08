@@ -734,6 +734,7 @@ nav.active .navigation {
     color: white;
     margin: 10px 0;
     line-height: 2;
+    padding-bottom: 30px;
 }
 
 .column-left h1, .column-left h3 {
