@@ -1,5 +1,3 @@
-/* Responsive Breakpoints */
-
 /* For very small devices like iPhone SE (max-width: 375px) */
 @media (max-width: 375px) {
     .cursor,
@@ -139,7 +137,7 @@
         margin-bottom: 20px;
     }
 
-    /* Right Column - Image мое */
+    /* Right Column - Image */
     .right {
         width: 100%; /* Full width */
         margin-top: 20px; /* Space between text and image */
@@ -165,7 +163,6 @@
         width: 100%; /* Full width on scroll */
     }
 
-
     /* New Message Section */
     .message-section {
         background: none;
@@ -182,6 +179,14 @@
     .portfolio {
         display: block; /* Stack the items vertically */
         padding: 40px 20px; /* Reduced padding for smaller screens */
+    }
+
+    /* Portfolio Subtitle */
+    .portfolio-subtitle {
+        text-align: left;
+        padding: 20px 20px 0 20px;
+        margin: 0;
+        font-size: 1.3rem;
     }
 
     /* Portfolio Item */
@@ -310,9 +315,7 @@
     }
 }
 
-
-
-/* For small mobile devices (376px - 600px) */
+/* For small mobile devices (376px - 500px) */
 @media (min-width: 376px) and (max-width: 500px) {
     .cursor,
     .cursor-outline {
@@ -481,6 +484,14 @@
         padding: 40px 20px;
     }
 
+    /* Portfolio Subtitle */
+    .portfolio-subtitle {
+        text-align: left;
+        padding: 20px 20px 0 20px;
+        margin: 0;
+        font-size: 1.3rem;
+    }
+
     .portfolio-item {
         opacity: 0;
         transform: translateY(20px);
@@ -595,6 +606,7 @@
     }
 }
 
+/* For small mobile devices (501px - 600px) */
 @media (min-width: 501px) and (max-width: 600px) {
     .cursor,
     .cursor-outline {
@@ -759,7 +771,6 @@
         width: 100%; /* Full width on scroll */
     }
 
-
     /* New Message Section */
     .message-section {
         background: none;
@@ -776,6 +787,14 @@
     .portfolio {
         display: block; /* Stack the items vertically */
         padding: 40px 20px; /* Reduced padding for smaller screens */
+    }
+
+    /* Portfolio Subtitle */
+    .portfolio-subtitle {
+        text-align: left;
+        padding: 20px 20px 0 20px;
+        margin: 0;
+        font-size: 1.3rem;
     }
 
     /* Portfolio Item */
@@ -904,7 +923,6 @@
     }
 }
 
-
 /* For small devices (601px - 768px) */
 @media (min-width: 601px) and (max-width: 768px) {
     .cursor,
@@ -924,6 +942,10 @@
 
     .nav-menu {
         flex-shrink: 1;
+    }
+
+    .-RadialGradient {
+        display: none;
     }
 
     .nav-menu a {
@@ -1068,6 +1090,14 @@
         padding: 50px 30px;
     }
 
+    /* Portfolio Subtitle */
+    .portfolio-subtitle {
+        text-align: left;
+        padding: 20px 30px 0 30px;
+        margin: 0;
+        font-size: 1.3rem;
+    }
+
     .portfolio-item {
         opacity: 0;
         transform: translateY(20px);
@@ -1172,7 +1202,6 @@
         width: 100%;
     }
 }
-
 
 /* For medium devices (769px - 992px) */
 @media (min-width: 769px) and (max-width: 992px) {
@@ -1334,6 +1363,14 @@
     .portfolio {
         display: block;
         padding: 50px 30px;
+    }
+
+    /* Portfolio Subtitle */
+    .portfolio-subtitle {
+        text-align: left;
+        padding: 20px 40px 0 40px;
+        margin: 0;
+        font-size: 1.3rem;
     }
 
     .portfolio-item {
@@ -1602,6 +1639,14 @@
         padding: 50px 30px;
     }
 
+    /* Portfolio Subtitle */
+    .portfolio-subtitle {
+        text-align: left;
+        padding: 20px 30px 0 30px;
+        margin: 0;
+        font-size: 1.3rem;
+    }
+
     .portfolio-item {
         opacity: 0;
         transform: translateY(20px);
@@ -1711,7 +1756,7 @@
 @media (min-width: 1201px) {
     .cursor,
     .cursor-outline {
-        display: none; /* Hides the custom cursor elements */
+        display: block; /* Show custom cursor on larger screens */
     }
     body {
         cursor: none;
@@ -1867,6 +1912,14 @@
     .portfolio {
         display: block;
         padding: 50px 30px;
+    }
+
+    /* Portfolio Subtitle */
+    .portfolio-subtitle {
+        text-align: left;
+        padding: 20px 30px 0 30px;
+        margin: 0;
+        font-size: 1.3rem;
     }
 
     .portfolio-item {
