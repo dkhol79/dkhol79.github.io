@@ -1413,3 +1413,5626 @@ body {
     font-size: 0.8rem;
   }
 }
+
+@media (min-width: 376px) and (max-width: 500px) {
+  /* Project Hero Section */
+  .project-hero {
+    position: relative;
+    background: rgb(31, 84, 69);
+    padding: 90px 18px 18px;
+  }
+
+  .project-header {
+    margin-bottom: 90px;
+  }
+
+  .company-name {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1.125rem;
+    color: rgb(189, 246, 189);
+    margin: 0;
+  }
+
+  .project-title {
+    font-family: 'Minonuku', sans-serif;
+    font-size: 3rem;
+    font-weight: normal;
+    color: white;
+    margin: 10px 0 20px 0;
+  }
+
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+  }
+
+  .tag {
+    font-family: 'Kessel105-Book', sans-serif;
+    background: none;
+    border: 2px solid rgb(189, 246, 189);
+    border-radius: 14px;
+    padding: 6px 14px;
+    font-size: 0.8rem;
+    color: rgb(189, 246, 189);
+    text-decoration: none;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 9px;
+    display: block;
+  }
+
+  /* Background transition */
+  body {
+    background: linear-gradient(
+      to bottom,
+      rgb(31, 84, 69) 0%,
+      rgb(31, 84, 69) 50%,
+      white 50%,
+      white 100%
+    ) fixed;
+  }
+
+  /* Project Details Section */
+  .project-details {
+    padding: 35px 18px;
+    background: white;
+  }
+
+  .details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: flex-start;
+    margin: 35px 0;
+  }
+
+  .column-left,
+  .column-middle,
+  .column-right {
+    flex: 1;
+    margin-right: 0;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .project-details .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.125rem;
+    color: rgb(31, 84, 69);
+    margin-bottom: 14px;
+    margin-top: 0;
+  }
+
+  .column-left p,
+  .column-middle li,
+  .column-right li,
+  .column-right p {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.85rem;
+    color: rgb(31, 84, 69);
+    margin-bottom: 9px;
+    line-height: 1.5;
+  }
+
+  .column-middle ul,
+  .column-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 18px 0;
+  }
+
+  /* CTA Dark Button Styles */
+  .cta-dark {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Kessel105-Book', sans-serif;
+    background: none;
+    border: 2px solid rgb(31, 84, 69);
+    border-radius: 18px;
+    padding: 5px 11px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: rgb(31, 84, 69) !important;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin-top: 12px;
+    margin-bottom: 35px;
+  }
+
+  .cta-dark .arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid transparent;
+    margin-left: 7px;
+    transition: all 0.3s ease;
+  }
+
+  .cta-dark .arrow {
+    font-size: 1.1rem;
+    color: rgb(31, 84, 69) !important;
+    transition: transform 0.2s ease, color 0.3s ease;
+  }
+
+  .cta-dark:hover {
+    padding-right: 35px;
+    border-color: transparent;
+    color: rgb(31, 84, 69) !important;
+  }
+
+  .cta-dark:hover .arrow-container {
+    background: rgb(31, 84, 69);
+    border-color: rgb(31, 84, 69);
+  }
+
+  .cta-dark:hover .arrow {
+    color: white !important;
+    transform: translateX(3px);
+  }
+
+  .cta-dark:hover ~ .cursor-outline {
+    transform: translate(-50%, -50%) scale(1.8);
+    border-width: 0.6px;
+  }
+
+  .transform {
+    transform: translate(-50%, -50%) scale(1.8);
+  }
+
+  /* Process Section */
+  .process-section {
+    padding: 35px 18px;
+    background: rgb(21, 21, 21);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .process-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(100, 100, 100, 0.2) 0px,
+      rgba(100, 100, 100, 0.2) 1px,
+      transparent 1px,
+      transparent 16px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(100, 100, 100, 0.2) 0px,
+      rgba(100, 100, 100, 0.2) 1px,
+      transparent 1px,
+      transparent 16px
+    );
+    background-attachment: fixed;
+    z-index: 0;
+  }
+
+  .process-container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    margin: 25px 0;
+  }
+
+  .process-left,
+  .process-right {
+    flex: 1;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.725rem;
+    color: rgb(150, 150, 150);
+    text-transform: uppercase;
+    margin-bottom: 9px;
+    display: block;
+  }
+
+  .process-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.125rem;
+    color: white;
+    margin-bottom: 14px;
+    margin-top: 0;
+  }
+
+  .process-left p {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.85rem;
+    color: rgb(200, 200, 200);
+    margin-bottom: 9px;
+    line-height: 1.5;
+  }
+
+  .process-image img,
+  .prototype-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 7px;
+    display: block;
+  }
+
+  .prototype-image-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    align-items: center;
+  }
+
+  .prototype-image img {
+    height: 180px;
+  }
+
+  /* Market Research Findings */
+  .market-research-findings {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .finding-card {
+    background: rgb(30, 30, 30);
+    border-radius: 7px;
+    padding: 14px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .finding-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .finding-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 9px;
+  }
+
+  .finding-icon {
+    font-size: 0.95rem;
+    color: rgb(189, 246, 189);
+    margin-right: 7px;
+    transition: transform 0.3s ease;
+  }
+
+  .finding-card:hover .finding-icon {
+    transform: scale(1.15);
+  }
+
+  .finding-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 0.95rem;
+    color: rgb(189, 246, 189);
+    margin: 0;
+  }
+
+  .finding-text {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.775rem;
+    color: rgb(200, 200, 200);
+    line-height: 1.5;
+  }
+
+  /* Competitive Research Findings */
+  .competitive-research-findings {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .competitive-card {
+    background: linear-gradient(135deg, rgb(40, 40, 40) 0%, rgb(50, 50, 50) 100%);
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 9px;
+    padding: 14px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .competitive-card:hover {
+    transform: translateX(4px);
+    border-color: rgb(189, 246, 189);
+    box-shadow: 0 5px 18px rgba(189, 246, 189, 0.15);
+  }
+
+  .competitive-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 11px;
+  }
+
+  .competitive-icon {
+    font-size: 1.05rem;
+    color: rgb(189, 246, 189);
+    margin-right: 9px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .competitive-card:hover .competitive-icon {
+    transform: rotate(15deg);
+    color: rgb(150, 246, 150);
+  }
+
+  .competitive-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 0.95rem;
+    color: rgb(189, 246, 189);
+    margin: 0;
+  }
+
+  .competitive-text {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.825rem;
+    color: rgb(220, 220, 220);
+    line-height: 1.6;
+  }
+
+  /* Digital Experience Section */
+  .digital-experience-section {
+    padding: 35px 18px;
+    background: white;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .digital-experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    margin: 35px 0;
+  }
+
+  .digital-experience-left {
+    flex: 1;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    order: 1;
+  }
+
+  .digital-experience-right {
+    flex: 1;
+    order: 2;
+  }
+
+  .digital-experience-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.725rem;
+    color: rgb(150, 150, 150);
+    text-transform: uppercase;
+    margin-bottom: 9px;
+    display: block;
+  }
+
+  .digital-experience-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.125rem;
+    color: black;
+    margin-bottom: 14px;
+    margin-top: 0;
+  }
+
+  .digital-experience-right p {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.85rem;
+    color: black;
+    margin-bottom: 9px;
+    line-height: 1.5;
+  }
+
+  .digital-experience-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 7px;
+    display: block;
+  }
+
+  /* Full Image Section */
+  .full-image-section {
+    padding: 18px 18px;
+    background: white;
+  }
+
+  .full-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 9px;
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  .dual-image-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    align-items: start;
+    margin-bottom: 12px;
+  }
+
+  .dual-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 7px;
+    display: block;
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    border-radius: 7px;
+    overflow: hidden;
+  }
+
+  .video-player {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
+  .video-controls {
+    position: absolute;
+    bottom: 7px;
+    left: 7px;
+    display: flex;
+    gap: 7px;
+  }
+
+  .video-controls button {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.75rem;
+    color: white;
+    background: rgba(31, 84, 69, 0.8);
+    border: none;
+    border-radius: 14px;
+    padding: 6px 11px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .video-controls button:hover {
+    background: rgb(31, 84, 69);
+  }
+
+  /* Web Design Section */
+  .web-design-section {
+    padding: 35px 18px;
+    background: white;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .web-design-container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    margin: 35px 0;
+  }
+
+  .web-design-left {
+    flex: 1;
+    margin-right: 0;
+    order: 1;
+  }
+
+  .web-design-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    order: 2;
+  }
+
+  .web-design-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.725rem;
+    color: rgb(150, 150, 150);
+    text-transform: uppercase;
+    margin-bottom: 9px;
+    display: block;
+  }
+
+  .web-design-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.125rem;
+    color: black;
+    margin-bottom: 14px;
+    margin-top: 0;
+  }
+
+  .web-design-left p {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.85rem;
+    color: black;
+    margin-bottom: 9px;
+    line-height: 1.5;
+  }
+
+  .web-design-image-container,
+  .triple-image-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    align-items: start;
+  }
+
+  .web-design-image img,
+  .triple-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 7px;
+    display: block;
+  }
+
+  /* GIF Two Column Layout */
+  .gif-two-column-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .gif-column,
+  .vertical-column,
+  .horizontal-row,
+  .square-row {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    align-items: flex-start;
+  }
+
+  .vertical-column .gif-item,
+  .horizontal-row .gif-item,
+  .square-row .gif-item {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .gif-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+  .gif-item.vertical img {
+    aspect-ratio: 3/4;
+  }
+
+  .gif-item.square img {
+    aspect-ratio: 1/1;
+  }
+
+  .gif-item.horizontal img {
+    aspect-ratio: 4/3;
+  }
+
+  /* Introduction Section */
+  .introduction-section {
+    padding: 35px 18px;
+    background: rgb(21, 21, 21);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .introduction-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(100, 100, 100, 0.2) 0px,
+      rgba(100, 100, 100, 0.2) 1px,
+      transparent 1px,
+      transparent 16px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(100, 100, 100, 0.2) 0px,
+      rgba(100, 100, 100, 0.2) 1px,
+      transparent 1px,
+      transparent 16px
+    );
+    z-index: 0;
+  }
+
+  .introduction-container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    margin: 25px 0;
+  }
+
+  .introduction-left,
+  .introduction-right {
+    flex: 1;
+    margin-right: 0;
+    order: 1;
+  }
+
+  .introduction-right {
+    order: 2;
+  }
+
+  .introduction-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    margin-bottom: 9px;
+    display: block;
+    font-weight: 500;
+  }
+
+  .introduction-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.125rem;
+    color: white;
+    margin-bottom: 14px;
+    margin-top: 0;
+  }
+
+  .introduction-right .work-section-title {
+    margin-top: 0;
+  }
+
+  .introduction-left p,
+  .introduction-right p {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.85rem;
+    color: rgb(200, 200, 200);
+    margin-bottom: 9px;
+    line-height: 1.5;
+  }
+
+  /* Experiment Section */
+  .experiment-section {
+    padding: 35px 18px;
+    background: white;
+  }
+
+  .experiment-container {
+    position: relative;
+    z-index: 1;
+    margin: 25px 0;
+  }
+
+  .experiment-content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: flex-start;
+  }
+
+  .experiment-text {
+    flex: 1;
+    line-height: 1.5;
+    order: 1;
+  }
+
+  .experiment-image {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    order: 2;
+  }
+
+  .experiment-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 7px;
+    display: block;
+  }
+
+  .image-caption {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.75rem;
+    color: rgb(100, 100, 100);
+    margin-top: 9px;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Results Section */
+  .results-section {
+    padding: 35px 18px;
+    background: rgb(245, 245, 245);
+  }
+
+  .results-container {
+    position: relative;
+    z-index: 1;
+    margin: 25px 0;
+  }
+
+  .results-content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: flex-start;
+  }
+
+  .results-image {
+    flex: 1;
+    max-width: 100%;
+    margin-top: 0;
+    order: 2;
+  }
+
+  .results-text {
+    flex: 1;
+    margin-top: 0;
+    order: 1;
+  }
+
+  .results-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    margin-bottom: 9px;
+    display: block;
+    font-weight: 500;
+  }
+
+  .results-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.125rem;
+    color: rgb(31, 84, 69);
+    margin-bottom: 14px;
+    margin-top: 0;
+  }
+
+  .results-text p,
+  .results-text li {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.85rem;
+    color: rgb(31, 84, 69);
+    margin: 0 0 9px 0;
+    line-height: 1.5;
+  }
+
+  .results-text ul {
+    list-style: none;
+    padding: 0;
+    margin: 14px 0;
+  }
+
+  .results-text li strong {
+    font-family: 'Kessel105-Bold', sans-serif;
+  }
+
+  .results-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 7px;
+    display: block;
+    margin-top: 0;
+  }
+
+  /* Future Work Section */
+  .future-work-section {
+    padding: 35px 18px;
+    background: rgb(21, 21, 21);
+  }
+
+  .future-work-container {
+    position: relative;
+    z-index: 1;
+    margin: 25px 0;
+  }
+
+  .future-work-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    margin-bottom: 9px;
+    display: block;
+    font-weight: 500;
+  }
+
+  .future-work-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.125rem;
+    color: white;
+    margin-bottom: 14px;
+    margin-top: 0;
+  }
+
+  .future-work-list {
+    list-style: none;
+    padding: 0;
+    margin: 14px 0;
+  }
+
+  .future-work-list li {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.85rem;
+    color: rgb(200, 200, 200);
+    margin-bottom: 9px;
+    line-height: 1.5;
+  }
+
+  .future-work-list li strong {
+    font-family: 'Kessel105-Bold', sans-serif;
+    color: rgb(189, 246, 189);
+  }
+
+  /* Bibliography Section */
+  .bibliography-section {
+    padding: 35px 18px;
+    background: white;
+  }
+
+  .bibliography-container {
+    position: relative;
+    z-index: 1;
+    margin: 25px 0;
+  }
+
+  .bibliography-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    margin-bottom: 9px;
+    display: block;
+    font-weight: 500;
+  }
+
+  .bibliography-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.125rem;
+    color: rgb(31, 84, 69);
+    margin-bottom: 14px;
+    margin-top: 0;
+  }
+
+  .bibliography-list {
+    list-style: none;
+    padding: 0;
+    margin: 14px 0;
+  }
+
+  .bibliography-list li {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.825rem;
+    color: rgb(31, 84, 69);
+    margin-bottom: 9px;
+    line-height: 1.5;
+  }
+
+  .bibliography-list li em {
+    font-style: italic;
+  }
+}
+@media (min-width: 501px) and (max-width: 600px) {
+  /* Project Hero Section */
+  .project-hero {
+    position: relative;
+    background: rgb(31, 84, 69);
+    padding: 100px 20px 20px;
+  }
+
+  .project-header {
+    margin-bottom: 100px;
+  }
+
+  .company-name {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1.25rem;
+    color: rgb(189, 246, 189);
+    margin: 0;
+  }
+
+  .project-title {
+    font-family: 'Minonuku', sans-serif;
+    font-size: 3.5rem;
+    font-weight: normal;
+    color: white;
+    margin: 10px 0 20px 0;
+  }
+
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .tag {
+    font-family: 'Kessel105-Book', sans-serif;
+    background: none;
+    border: 2px solid rgb(189, 246, 189);
+    border-radius: 15px;
+    padding: 6px 15px;
+    font-size: 0.875rem;
+    color: rgb(189, 246, 189);
+    text-decoration: none;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+  }
+
+  /* Background transition */
+  body {
+    background: linear-gradient(
+      to bottom,
+      rgb(31, 84, 69) 0%,
+      rgb(31, 84, 69) 50%,
+      white 50%,
+      white 100%
+    ) fixed;
+  }
+
+  /* Project Details Section */
+  .project-details {
+    padding: 40px 20px;
+    background: white;
+  }
+
+  .details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    margin: 40px 0;
+  }
+
+  .column-left,
+  .column-middle,
+  .column-right {
+    flex: 1;
+    margin-right: 0;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .project-details .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.25rem;
+    color: rgb(31, 84, 69);
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+
+  .column-left p,
+  .column-middle li,
+  .column-right li,
+  .column-right p {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.875rem;
+    color: rgb(31, 84, 69);
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+
+  .column-middle ul,
+  .column-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+
+  /* CTA Dark Button Styles */
+  .cta-dark {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Kessel105-Book', sans-serif;
+    background: none;
+    border: 2px solid rgb(31, 84, 69);
+    border-radius: 20px;
+    padding: 5px 12px;
+    font-size: 0.875rem;
+    text-decoration: none;
+    color: rgb(31, 84, 69) !important;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+
+  .cta-dark .arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid transparent;
+    margin-left: 8px;
+    transition: all 0.3s ease;
+  }
+
+  .cta-dark .arrow {
+    font-size: 1.2rem;
+    color: rgb(31, 84, 69) !important;
+    transition: transform 0.2s ease, color 0.3s ease;
+  }
+
+  .cta-dark:hover {
+    padding-right: 40px;
+    border-color: transparent;
+    color: rgb(31, 84, 69) !important;
+  }
+
+  .cta-dark:hover .arrow-container {
+    background: rgb(31, 84, 69);
+    border-color: rgb(31, 84, 69);
+  }
+
+  .cta-dark:hover .arrow {
+    color: white !important;
+    transform: translateX(3px);
+  }
+
+  .cta-dark:hover ~ .cursor-outline {
+    transform: translate(-50%, -50%) scale(2);
+    border-width: 0.5px;
+  }
+
+  .transform {
+    transform: translate(-50%, -50%) scale(2);
+  }
+
+  /* Process Section */
+  .process-section {
+    padding: 40px 20px;
+    background: rgb(21, 21, 21);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .process-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(100, 100, 100, 0.2) 0px,
+      rgba(100, 100, 100, 0.2) 1px,
+      transparent 1px,
+      transparent 15px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(100, 100, 100, 0.2) 0px,
+      rgba(100, 100, 100, 0.2) 1px,
+      transparent 1px,
+      transparent 15px
+    );
+    background-attachment: fixed;
+    z-index: 0;
+  }
+
+  .process-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    margin: 30px 0;
+  }
+
+  .process-left,
+  .process-right {
+    flex: 1;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.75rem;
+    color: rgb(150, 150, 150);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  .process-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.25rem;
+    color: white;
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+
+  .process-left p {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.875rem;
+    color: rgb(200, 200, 200);
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+
+  .process-image img,
+  .prototype-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+  }
+
+  .prototype-image-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .prototype-image img {
+    height: 200px;
+  }
+
+  /* Market Research Findings */
+  .market-research-findings {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .finding-card {
+    background: rgb(30, 30, 30);
+    border-radius: 8px;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .finding-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .finding-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  .finding-icon {
+    font-size: 1rem;
+    color: rgb(189, 246, 189);
+    margin-right: 6px;
+    transition: transform 0.3s ease;
+  }
+
+  .finding-card:hover .finding-icon {
+    transform: scale(1.1);
+  }
+
+  .finding-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1rem;
+    color: rgb(189, 246, 189);
+    margin: 0;
+  }
+
+  .finding-text {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.8rem;
+    color: rgb(200, 200, 200);
+    line-height: 1.5;
+  }
+
+  /* Competitive Research Findings */
+  .competitive-research-findings {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .competitive-card {
+    background: linear-gradient(135deg, rgb(40, 40, 40) 0%, rgb(50, 50, 50) 100%);
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .competitive-card:hover {
+    transform: translateX(3px);
+    border-color: rgb(189, 246, 189);
+    box-shadow: 0 4px 15px rgba(189, 246, 189, 0.15);
+  }
+
+  .competitive-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .competitive-icon {
+    font-size: 1.1rem;
+    color: rgb(189, 246, 189);
+    margin-right: 8px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .competitive-card:hover .competitive-icon {
+    transform: rotate(15deg);
+    color: rgb(150, 246, 150);
+  }
+
+  .competitive-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1rem;
+    color: rgb(189, 246, 189);
+    margin: 0;
+  }
+
+  .competitive-text {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.85rem;
+    color: rgb(220, 220, 220);
+    line-height: 1.6;
+  }
+
+  /* Digital Experience Section */
+  .digital-experience-section {
+    padding: 40px 20px;
+    background: white;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .digital-experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    margin: 40px 0;
+  }
+
+  .digital-experience-left {
+    flex: 1;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    order: 1;
+  }
+
+  .digital-experience-right {
+    flex: 1;
+    order: 2;
+  }
+
+  .digital-experience-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.75rem;
+    color: rgb(150, 150, 150);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  .digital-experience-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.25rem;
+    color: black;
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+
+  .digital-experience-right p {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.875rem;
+    color: black;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+
+  .digital-experience-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+  }
+
+  /* Full Image Section */
+  .full-image-section {
+    padding: 20px 20px;
+    background: white;
+  }
+
+  .full-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .dual-image-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    align-items: start;
+    margin-bottom: 15px;
+  }
+
+  .dual-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .video-player {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
+  .video-controls {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    display: flex;
+    gap: 8px;
+  }
+
+  .video-controls button {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.8rem;
+    color: white;
+    background: rgba(31, 84, 69, 0.8);
+    border: none;
+    border-radius: 15px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .video-controls button:hover {
+    background: rgb(31, 84, 69);
+  }
+
+  /* Web Design Section */
+  .web-design-section {
+    padding: 40px 20px;
+    background: white;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .web-design-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    margin: 40px 0;
+  }
+
+  .web-design-left {
+    flex: 1;
+    margin-right: 0;
+    order: 1;
+  }
+
+  .web-design-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    order: 2;
+  }
+
+  .web-design-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.75rem;
+    color: rgb(150, 150, 150);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  .web-design-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.25rem;
+    color: black;
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+
+  .web-design-left p {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.875rem;
+    color: black;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+
+  .web-design-image-container,
+  .triple-image-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    align-items: start;
+  }
+
+  .web-design-image img,
+  .triple-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+  }
+
+  /* GIF Two Column Layout */
+  .gif-two-column-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .gif-column,
+  .vertical-column,
+  .horizontal-row,
+  .square-row {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .vertical-column .gif-item,
+  .horizontal-row .gif-item,
+  .square-row .gif-item {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .gif-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+  .gif-item.vertical img {
+    aspect-ratio: 3/4;
+  }
+
+  .gif-item.square img {
+    aspect-ratio: 1/1;
+  }
+
+  .gif-item.horizontal img {
+    aspect-ratio: 4/3;
+  }
+
+  /* Introduction Section */
+  .introduction-section {
+    padding: 40px 20px;
+    background: rgb(21, 21, 21);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .introduction-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(100, 100, 100, 0.2) 0px,
+      rgba(100, 100, 100, 0.2) 1px,
+      transparent 1px,
+      transparent 15px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(100, 100, 100, 0.2) 0px,
+      rgba(100, 100, 100, 0.2) 1px,
+      transparent 1px,
+      transparent 15px
+    );
+    z-index: 0;
+  }
+
+  .introduction-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    margin: 30px 0;
+  }
+
+  .introduction-left,
+  .introduction-right {
+    flex: 1;
+    margin-right: 0;
+    order: 1;
+  }
+
+  .introduction-right {
+    order: 2;
+  }
+
+  .introduction-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    display: block;
+    font-weight: 500;
+  }
+
+  .introduction-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.25rem;
+    color: white;
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+
+  .introduction-right .work-section-title {
+    margin-top: 0;
+  }
+
+  .introduction-left p,
+  .introduction-right p {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.875rem;
+    color: rgb(200, 200, 200);
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+
+  /* Experiment Section */
+  .experiment-section {
+    padding: 40px 20px;
+    background: white;
+  }
+
+  .experiment-container {
+    position: relative;
+    z-index: 1;
+    margin: 30px 0;
+  }
+
+  .experiment-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .experiment-text {
+    flex: 1;
+    line-height: 1.5;
+    order: 1;
+  }
+
+  .experiment-image {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    order: 2;
+  }
+
+  .experiment-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    display: block;
+  }
+
+  .image-caption {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.8rem;
+    color: rgb(100, 100, 100);
+    margin-top: 8px;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Results Section */
+  .results-section {
+    padding: 40px 20px;
+    background: rgb(245, 245, 245);
+  }
+
+  .results-container {
+    position: relative;
+    z-index: 1;
+    margin: 30px 0;
+  }
+
+  .results-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .results-image {
+    flex: 1;
+    max-width: 100%;
+    margin-top: 0;
+    order: 2;
+  }
+
+  .results-text {
+    flex: 1;
+    margin-top: 0;
+    order: 1;
+  }
+
+  .results-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    display: block;
+    font-weight: 500;
+  }
+
+  .results-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.25rem;
+    color: rgb(31, 84, 69);
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+
+  .results-text p,
+  .results-text li {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.875rem;
+    color: rgb(31, 84, 69);
+    margin: 0 0 10px 0;
+    line-height: 1.5;
+  }
+
+  .results-text ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+  }
+
+  .results-text li strong {
+    font-family: 'Kessel105-Bold', sans-serif;
+  }
+
+  .results-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    display: block;
+    margin-top: 0;
+  }
+
+  /* Future Work Section */
+  .future-work-section {
+    padding: 40px 20px;
+    background: rgb(21, 21, 21);
+  }
+
+  .future-work-container {
+    position: relative;
+    z-index: 1;
+    margin: 30px 0;
+  }
+
+  .future-work-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    display: block;
+    font-weight: 500;
+  }
+
+  .future-work-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.25rem;
+    color: white;
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+
+  .future-work-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+  }
+
+  .future-work-list li {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.875rem;
+    color: rgb(200, 200, 200);
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+
+  .future-work-list li strong {
+    font-family: 'Kessel105-Bold', sans-serif;
+    color: rgb(189, 246, 189);
+  }
+
+  /* Bibliography Section */
+  .bibliography-section {
+    padding: 40px 20px;
+    background: white;
+  }
+
+  .bibliography-container {
+    position: relative;
+    z-index: 1;
+    margin: 30px 0;
+  }
+
+  .bibliography-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    display: block;
+    font-weight: 500;
+  }
+
+  .bibliography-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.25rem;
+    color: rgb(31, 84, 69);
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+
+  .bibliography-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+  }
+
+  .bibliography-list li {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.85rem;
+    color: rgb(31, 84, 69);
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+
+  .bibliography-list li em {
+    font-style: italic;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  /* Project Hero Section */
+  .project-hero {
+    position: relative;
+    background: rgb(31, 84, 69);
+    padding: 120px 30px 30px;
+  }
+
+  .project-header {
+    margin-bottom: 120px;
+  }
+
+  .company-name {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(189, 246, 189);
+    margin: 0;
+  }
+
+  .project-title {
+    font-family: 'Minonuku', sans-serif;
+    font-size: 5rem;
+    font-weight: normal;
+    color: white;
+    margin: 10px 0 20px 0;
+  }
+
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .tag {
+    font-family: 'Kessel105-Book', sans-serif;
+    background: none;
+    border: 2px solid rgb(189, 246, 189);
+    border-radius: 18px;
+    padding: 7px 18px;
+    font-size: 0.9rem;
+    color: rgb(189, 246, 189);
+    text-decoration: none;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+  }
+
+  /* Background transition */
+  body {
+    background: linear-gradient(
+      to bottom,
+      rgb(31, 84, 69) 0%,
+      rgb(31, 84, 69) 50%,
+      white 50%,
+      white 100%
+    ) fixed;
+  }
+
+  /* Project Details Section */
+  .project-details {
+    padding: 50px 30px;
+    background: white;
+  }
+
+  .details-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr; /* First column widest, next two narrower and equal */
+    gap: 25px;
+    align-items: start;
+    margin: 50px 0;
+  }
+
+  .column-left,
+  .column-middle,
+  .column-right {
+    margin: 0;
+    padding: 0;
+  }
+
+  .project-details .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.35rem;
+    color: rgb(31, 84, 69);
+    margin-bottom: 18px;
+    margin-top: 0;
+    align-self: start; /* Ensure titles align at the top of each column */
+  }
+
+  .column-left p,
+  .column-middle li,
+  .column-right li,
+  .column-right p {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.95rem;
+    color: rgb(31, 84, 69);
+    margin-bottom: 12px;
+    line-height: 1.5;
+  }
+
+  .column-middle ul,
+  .column-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+  }
+
+  /* CTA Dark Button Styles */
+  .cta-dark {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Kessel105-Book', sans-serif;
+    background: none;
+    border: 2px solid rgb(31, 84, 69);
+    border-radius: 25px;
+    padding: 6px 14px;
+    font-size: 0.95rem;
+    text-decoration: none;
+    color: rgb(31, 84, 69) !important;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin-top: 18px;
+    margin-bottom: 35px;
+  }
+
+  .cta-dark .arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid transparent;
+    margin-left: 9px;
+    transition: all 0.3s ease;
+  }
+
+  .cta-dark .arrow {
+    font-size: 1.3rem;
+    color: rgb(31, 84, 69) !important;
+    transition: transform 0.2s ease, color 0.3s ease;
+  }
+
+  .cta-dark:hover {
+    padding-right: 45px;
+    border-color: transparent;
+    color: rgb(31, 84, 69) !important;
+  }
+
+  .cta-dark:hover .arrow-container {
+    background: rgb(31, 84, 69);
+    border-color: rgb(31, 84, 69);
+  }
+
+  .cta-dark:hover .arrow {
+    color: white !important;
+    transform: translateX(3px);
+  }
+
+  .cta-dark:hover ~ .cursor-outline {
+    transform: translate(-50%, -50%) scale(2.5);
+    border-width: 0.6px;
+  }
+
+  .transform {
+    transform: translate(-50%, -50%) scale(2.5);
+  }
+
+  /* Process Section */
+  .process-section {
+    padding: 50px 30px;
+    background: rgb(21, 21, 21);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .process-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(100, 100, 100, 0.2) 0px,
+      rgba(100, 100, 100, 0.2) 1px,
+      transparent 1px,
+      transparent 18px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(100, 100, 100, 0.2) 0px,
+      rgba(100, 100, 100, 0.2) 1px,
+      transparent 1px,
+      transparent 18px
+    );
+    background-attachment: fixed;
+    z-index: 0;
+  }
+
+  .process-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    margin: 40px 0;
+  }
+
+  .process-left,
+  .process-right {
+    flex: 1;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.8rem;
+    color: rgb(150, 150, 150);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .process-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.35rem;
+    color: white;
+    margin-bottom: 18px;
+    margin-top: 0;
+  }
+
+  .process-left p {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.95rem;
+    color: rgb(200, 200, 200);
+    margin-bottom: 12px;
+    line-height: 1.5;
+  }
+
+  .process-image img,
+  .prototype-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .prototype-image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    align-items: center;
+  }
+
+  .prototype-image img {
+    height: 250px;
+  }
+
+  /* Market Research Findings */
+  .market-research-findings {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .finding-card {
+    background: rgb(30, 30, 30);
+    border-radius: 10px;
+    padding: 18px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .finding-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .finding-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .finding-icon {
+    font-size: 1.1rem;
+    color: rgb(189, 246, 189);
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+  }
+
+  .finding-card:hover .finding-icon {
+    transform: scale(1.15);
+  }
+
+  .finding-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.1rem;
+    color: rgb(189, 246, 189);
+    margin: 0;
+  }
+
+  .finding-text {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.85rem;
+    color: rgb(200, 200, 200);
+    line-height: 1.5;
+  }
+
+  /* Competitive Research Findings */
+  .competitive-research-findings {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .competitive-card {
+    background: linear-gradient(135deg, rgb(40, 40, 40) 0%, rgb(50, 50, 50) 100%);
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 11px;
+    padding: 18px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .competitive-card:hover {
+    transform: translateX(4px);
+    border-color: rgb(189, 246, 189);
+    box-shadow: 0 5px 18px rgba(189, 246, 189, 0.15);
+  }
+
+  .competitive-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 11px;
+  }
+
+  .competitive-icon {
+    font-size: 1.2rem;
+    color: rgb(189, 246, 189);
+    margin-right: 9px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .competitive-card:hover .competitive-icon {
+    transform: rotate(15deg);
+    color: rgb(150, 246, 150);
+  }
+
+  .competitive-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.1rem;
+    color: rgb(189, 246, 189);
+    margin: 0;
+  }
+
+  .competitive-text {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.9rem;
+    color: rgb(220, 220, 220);
+    line-height: 1.6;
+  }
+
+  /* Digital Experience Section */
+  .digital-experience-section {
+    padding: 50px 30px;
+    background: white;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .digital-experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    margin: 50px 0;
+  }
+
+  .digital-experience-left {
+    flex: 1;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    order: 1;
+  }
+
+  .digital-experience-right {
+    flex: 1;
+    order: 2;
+  }
+
+  .digital-experience-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.8rem;
+    color: rgb(150, 150, 150);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .digital-experience-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.35rem;
+    color: black;
+    margin-bottom: 18px;
+    margin-top: 0;
+  }
+
+  .digital-experience-right p {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.95rem;
+    color: black;
+    margin-bottom: 12px;
+    line-height: 1.5;
+  }
+
+  .digital-experience-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+  }
+
+  /* Full Image Section */
+  .full-image-section {
+    padding: 25px 30px;
+    background: white;
+  }
+
+  .full-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+    display: block;
+    margin-bottom: 18px;
+  }
+
+  .dual-image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    align-items: start;
+    margin-bottom: 18px;
+  }
+
+  .dual-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .video-player {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
+  .video-controls {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .video-controls button {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.85rem;
+    color: white;
+    background: rgba(31, 84, 69, 0.8);
+    border: none;
+    border-radius: 18px;
+    padding: 7px 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .video-controls button:hover {
+    background: rgb(31, 84, 69);
+  }
+
+  /* Web Design Section */
+  .web-design-section {
+    padding: 50px 30px;
+    background: white;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .web-design-container {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    margin: 50px 0;
+  }
+
+  .web-design-left {
+    flex: 1;
+    margin-right: 0;
+    order: 1;
+  }
+
+  .web-design-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    order: 2;
+  }
+
+  .web-design-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.8rem;
+    color: rgb(150, 150, 150);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .web-design-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.35rem;
+    color: black;
+    margin-bottom: 18px;
+    margin-top: 0;
+  }
+
+  .web-design-left p {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.95rem;
+    color: black;
+    margin-bottom: 12px;
+    line-height: 1.5;
+  }
+
+  .web-design-image-container,
+  .triple-image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    align-items: start;
+  }
+
+  .web-design-image img,
+  .triple-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+  }
+
+  /* GIF Two Column Layout */
+  .gif-two-column-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .gif-column,
+  .vertical-column,
+  .horizontal-row,
+  .square-row {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .vertical-column .gif-item,
+  .horizontal-row .gif-item,
+  .square-row .gif-item {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .gif-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+  .gif-item.vertical img {
+    aspect-ratio: 3/4;
+  }
+
+  .gif-item.square img {
+    aspect-ratio: 1/1;
+  }
+
+  .gif-item.horizontal img {
+    aspect-ratio: 4/3;
+  }
+
+  /* Introduction Section */
+  .introduction-section {
+    padding: 50px 30px;
+    background: rgb(21, 21, 21);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .introduction-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(100, 100, 100, 0.2) 0px,
+      rgba(100, 100, 100, 0.2) 1px,
+      transparent 1px,
+      transparent 18px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(100, 100, 100, 0.2) 0px,
+      rgba(100, 100, 100, 0.2) 1px,
+      transparent 1px,
+      transparent 18px
+    );
+    z-index: 0;
+  }
+
+  .introduction-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    margin: 40px 0;
+  }
+
+  .introduction-left,
+  .introduction-right {
+    flex: 1;
+    margin-right: 0;
+    order: 1;
+  }
+
+  .introduction-right {
+    order: 2;
+  }
+
+  .introduction-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: 500;
+  }
+
+  .introduction-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.35rem;
+    color: white;
+    margin-bottom: 18px;
+    margin-top: 0;
+  }
+
+  .introduction-right .work-section-title {
+    margin-top: 0;
+  }
+
+  .introduction-left p,
+  .introduction-right p {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.95rem;
+    color: rgb(200, 200, 200);
+    margin-bottom: 12px;
+    line-height: 1.5;
+  }
+
+  /* Experiment Section */
+  .experiment-section {
+    padding: 50px 30px;
+    background: white;
+  }
+
+  .experiment-container {
+    position: relative;
+    z-index: 1;
+    margin: 40px 0;
+  }
+
+  .experiment-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: flex-start;
+  }
+
+  .experiment-text {
+    flex: 1;
+    line-height: 1.5;
+    order: 1;
+  }
+
+  .experiment-image {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    order: 2;
+  }
+
+  .experiment-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .image-caption {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.85rem;
+    color: rgb(100, 100, 100);
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Results Section */
+  .results-section {
+    padding: 50px 30px;
+    background: rgb(245, 245, 245);
+  }
+
+  .results-container {
+    position: relative;
+    z-index: 1;
+    margin: 40px 0;
+  }
+
+  .results-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: flex-start;
+  }
+
+  .results-image {
+    flex: 1;
+    max-width: 100%;
+    margin-top: 0;
+    order: 2;
+  }
+
+  .results-text {
+    flex: 1;
+    margin-top: 0;
+    order: 1;
+  }
+
+  .results-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: 500;
+  }
+
+  .results-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.35rem;
+    color: rgb(31, 84, 69);
+    margin-bottom: 18px;
+    margin-top: 0;
+  }
+
+  .results-text p,
+  .results-text li {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.95rem;
+    color: rgb(31, 84, 69);
+    margin: 0 0 12px 0;
+    line-height: 1.5;
+  }
+
+  .results-text ul {
+    list-style: none;
+    padding: 0;
+    margin: 18px 0;
+  }
+
+  .results-text li strong {
+    font-family: 'Kessel105-Bold', sans-serif;
+  }
+
+  .results-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    display: block;
+    margin-top: 0;
+  }
+
+  /* Future Work Section */
+  .future-work-section {
+    padding: 50px 30px;
+    background: rgb(21, 21, 21);
+  }
+
+  .future-work-container {
+    position: relative;
+    z-index: 1;
+    margin: 40px 0;
+  }
+
+  .future-work-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: 500;
+  }
+
+  .future-work-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.35rem;
+    color: white;
+    margin-bottom: 18px;
+    margin-top: 0;
+  }
+
+  .future-work-list {
+    list-style: none;
+    padding: 0;
+    margin: 18px 0;
+  }
+
+  .future-work-list li {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.95rem;
+    color: rgb(200, 200, 200);
+    margin-bottom: 12px;
+    line-height: 1.5;
+  }
+
+  .future-work-list li strong {
+    font-family: 'Kessel105-Bold', sans-serif;
+    color: rgb(189, 246, 189);
+  }
+
+  /* Bibliography Section */
+  .bibliography-section {
+    padding: 50px 30px;
+    background: white;
+  }
+
+  .bibliography-container {
+    position: relative;
+    z-index: 1;
+    margin: 40px 0;
+  }
+
+  .bibliography-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: 500;
+  }
+
+  .bibliography-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.35rem;
+    color: rgb(31, 84, 69);
+    margin-bottom: 18px;
+    margin-top: 0;
+  }
+
+  .bibliography-list {
+    list-style: none;
+    padding: 0;
+    margin: 18px 0;
+  }
+
+  .bibliography-list li {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.9rem;
+    color: rgb(31, 84, 69);
+    margin-bottom: 12px;
+    line-height: 1.5;
+  }
+
+  .bibliography-list li em {
+    font-style: italic;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  /* Project Hero Section */
+  .project-hero {
+    position: relative;
+    background: rgb(31, 84, 69);
+    padding: 140px 40px 40px;
+  }
+
+  .project-header {
+    margin-bottom: 140px;
+  }
+
+  .company-name {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1.75rem;
+    color: rgb(189, 246, 189);
+    margin: 0;
+  }
+
+  .project-title {
+    font-family: 'Minonuku', sans-serif;
+    font-size: 5.5rem;
+    font-weight: normal;
+    color: white;
+    margin: 12px 0 24px 0;
+  }
+
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .tag {
+    font-family: 'Kessel105-Book', sans-serif;
+    background: none;
+    border: 2px solid rgb(189, 246, 189);
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 1rem;
+    color: rgb(189, 246, 189);
+    text-decoration: none;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 14px;
+    display: block;
+  }
+
+  /* Background transition */
+  body {
+    background: linear-gradient(
+      to bottom,
+      rgb(31, 84, 69) 0%,
+      rgb(31, 84, 69) 50%,
+      white 50%,
+      white 100%
+    ) fixed;
+  }
+
+  /* Project Details Section */
+  .project-details {
+    padding: 60px 40px;
+    background: white;
+  }
+
+  .details-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr; /* First column widest, next two narrower and equal */
+    gap: 30px;
+    align-items: start;
+    margin: 60px 0;
+  }
+
+  .column-left,
+  .column-middle,
+  .column-right {
+    margin: 0;
+    padding: 0;
+  }
+
+  .project-details .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(31, 84, 69);
+    margin-bottom: 20px;
+    margin-top: 0;
+    align-self: start;
+  }
+
+  .column-left p,
+  .column-middle li,
+  .column-right li,
+  .column-right p {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1rem;
+    color: rgb(31, 84, 69);
+    margin-bottom: 14px;
+    line-height: 1.6;
+  }
+
+  .column-middle ul,
+  .column-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+  }
+
+  /* CTA Dark Button Styles */
+  .cta-dark {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Kessel105-Book', sans-serif;
+    background: none;
+    border: 2px solid rgb(31, 84, 69);
+    border-radius: 28px;
+    padding: 7px 16px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: rgb(31, 84, 69) !important;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .cta-dark .arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid transparent;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .cta-dark .arrow {
+    font-size: 1.4rem;
+    color: rgb(31, 84, 69) !important;
+    transition: transform 0.2s ease, color 0.3s ease;
+  }
+
+  .cta-dark:hover {
+    padding-right: 50px;
+    border-color: transparent;
+    color: rgb(31, 84, 69) !important;
+  }
+
+  .cta-dark:hover .arrow-container {
+    background: rgb(31, 84, 69);
+    border-color: rgb(31, 84, 69);
+  }
+
+  .cta-dark:hover .arrow {
+    color: white !important;
+    transform: translateX(4px);
+  }
+
+  .cta-dark:hover ~ .cursor-outline {
+    transform: translate(-50%, -50%) scale(2.8);
+    border-width: 0.7px;
+  }
+
+  .transform {
+    transform: translate(-50%, -50%) scale(2.8);
+  }
+
+  /* Process Section */
+  .process-section {
+    padding: 60px 40px;
+    background: rgb(21, 21, 21);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .process-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(100, 100, 100, 0.2) 0px,
+      rgba(100, 100, 100, 0.2) 1px,
+      transparent 1px,
+      transparent 20px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(100, 100, 100, 0.2) 0px,
+      rgba(100, 100, 100, 0.2) 1px,
+      transparent 1px,
+      transparent 20px
+    );
+    background-attachment: fixed;
+    z-index: 0;
+  }
+
+  .process-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    margin: 50px 0;
+  }
+
+  .process-left,
+  .process-right {
+    flex: 1;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.85rem;
+    color: rgb(150, 150, 150);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  .process-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+
+  .process-left p {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1rem;
+    color: rgb(200, 200, 200);
+    margin-bottom: 14px;
+    line-height: 1.6;
+  }
+
+  .process-image img,
+  .prototype-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+  }
+
+  .prototype-image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+  }
+
+  .prototype-image img {
+    height: 300px;
+  }
+
+  /* Market Research Findings */
+  .market-research-findings {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .finding-card {
+    background: rgb(30, 30, 30);
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .finding-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.2);
+  }
+
+  .finding-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  .finding-icon {
+    font-size: 1.2rem;
+    color: rgb(189, 246, 189);
+    margin-right: 9px;
+    transition: transform 0.3s ease;
+  }
+
+  .finding-card:hover .finding-icon {
+    transform: scale(1.2);
+  }
+
+  .finding-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.2rem;
+    color: rgb(189, 246, 189);
+    margin: 0;
+  }
+
+  .finding-text {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.9rem;
+    color: rgb(200, 200, 200);
+    line-height: 1.6;
+  }
+
+  /* Competitive Research Findings */
+  .competitive-research-findings {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .competitive-card {
+    background: linear-gradient(135deg, rgb(40, 40, 40) 0%, rgb(50, 50, 50) 100%);
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .competitive-card:hover {
+    transform: translateX(5px);
+    border-color: rgb(189, 246, 189);
+    box-shadow: 0 6px 20px rgba(189, 246, 189, 0.15);
+  }
+
+  .competitive-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  .competitive-icon {
+    font-size: 1.3rem;
+    color: rgb(189, 246, 189);
+    margin-right: 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .competitive-card:hover .competitive-icon {
+    transform: rotate(15deg);
+    color: rgb(150, 246, 150);
+  }
+
+  .competitive-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.2rem;
+    color: rgb(189, 246, 189);
+    margin: 0;
+  }
+
+  .competitive-text {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.95rem;
+    color: rgb(220, 220, 220);
+    line-height: 1.6;
+  }
+
+  /* Digital Experience Section */
+  .digital-experience-section {
+    padding: 60px 40px;
+    background: white;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .digital-experience-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    margin: 60px 0;
+  }
+
+  .digital-experience-left {
+    flex: 1;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    order: 1;
+  }
+
+  .digital-experience-right {
+    flex: 1;
+    order: 2;
+  }
+
+  .digital-experience-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.85rem;
+    color: rgb(150, 150, 150);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  .digital-experience-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+
+  .digital-experience-right p {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 14px;
+    line-height: 1.6;
+  }
+
+  .digital-experience-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+  }
+
+  /* Full Image Section */
+  .full-image-section {
+    padding: 30px 40px;
+    background: white;
+  }
+
+  .full-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 14px;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .dual-image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: start;
+    margin-bottom: 20px;
+  }
+
+  .dual-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .video-player {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
+  .video-controls {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    display: flex;
+    gap: 12px;
+  }
+
+  .video-controls button {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.9rem;
+    color: white;
+    background: rgba(31, 84, 69, 0.8);
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .video-controls button:hover {
+    background: rgb(31, 84, 69);
+  }
+
+  /* Web Design Section */
+  .web-design-section {
+    padding: 60px 40px;
+    background: white;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .web-design-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    margin: 60px 0;
+  }
+
+  .web-design-left {
+    flex: 1;
+    margin-right: 0;
+    order: 1;
+  }
+
+  .web-design-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    order: 2;
+  }
+
+  .web-design-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.85rem;
+    color: rgb(150, 150, 150);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  .web-design-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+
+  .web-design-left p {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 14px;
+    line-height: 1.6;
+  }
+
+  .web-design-image-container,
+  .triple-image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: start;
+  }
+
+  .web-design-image img,
+  .triple-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+  }
+
+  /* GIF Two Column Layout */
+  .gif-two-column-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .gif-column,
+  .vertical-column,
+  .horizontal-row,
+  .square-row {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: flex-start;
+  }
+
+  .vertical-column .gif-item,
+  .horizontal-row .gif-item,
+  .square-row .gif-item {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .gif-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+  .gif-item.vertical img {
+    aspect-ratio: 3/4;
+  }
+
+  .gif-item.square img {
+    aspect-ratio: 1/1;
+  }
+
+  .gif-item.horizontal img {
+    aspect-ratio: 4/3;
+  }
+
+  /* Introduction Section */
+  .introduction-section {
+    padding: 60px 40px;
+    background: rgb(21, 21, 21);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .introduction-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(100, 100, 100, 0.2) 0px,
+      rgba(100, 100, 100, 0.2) 1px,
+      transparent 1px,
+      transparent 20px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(100, 100, 100, 0.2) 0px,
+      rgba(100, 100, 100, 0.2) 1px,
+      transparent 1px,
+      transparent 20px
+    );
+    z-index: 0;
+  }
+
+  .introduction-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    margin: 50px 0;
+  }
+
+  .introduction-left,
+  .introduction-right {
+    flex: 1;
+    margin-right: 0;
+    order: 1;
+  }
+
+  .introduction-right {
+    order: 2;
+  }
+
+  .introduction-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    display: block;
+    font-weight: 500;
+  }
+
+  .introduction-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+
+  .introduction-right .work-section-title {
+    margin-top: 0;
+  }
+
+  .introduction-left p,
+  .introduction-right p {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1rem;
+    color: rgb(200, 200, 200);
+    margin-bottom: 14px;
+    line-height: 1.6;
+  }
+
+  /* Experiment Section */
+  .experiment-section {
+    padding: 60px 40px;
+    background: white;
+  }
+
+  .experiment-container {
+    position: relative;
+    z-index: 1;
+    margin: 50px 0;
+  }
+
+  .experiment-content {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-start;
+  }
+
+  .experiment-text {
+    flex: 1;
+    line-height: 1.6;
+    order: 1;
+  }
+
+  .experiment-image {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    order: 2;
+  }
+
+  .experiment-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+    display: block;
+  }
+
+  .image-caption {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.9rem;
+    color: rgb(100, 100, 100);
+    margin-top: 12px;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Results Section */
+  .results-section {
+    padding: 60px 40px;
+    background: rgb(245, 245, 245);
+  }
+
+  .results-container {
+    position: relative;
+    z-index: 1;
+    margin: 50px 0;
+  }
+
+  .results-content {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-start;
+  }
+
+  .results-image {
+    flex: 1;
+    max-width: 100%;
+    margin-top: 0;
+    order: 2;
+  }
+
+  .results-text {
+    flex: 1;
+    margin-top: 0;
+    order: 1;
+  }
+
+  .results-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    display: block;
+    font-weight: 500;
+  }
+
+  .results-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(31, 84, 69);
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+
+  .results-text p,
+  .results-text li {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1rem;
+    color: rgb(31, 84, 69);
+    margin: 0 0 14px 0;
+    line-height: 1.6;
+  }
+
+  .results-text ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+
+  .results-text li strong {
+    font-family: 'Kessel105-Bold', sans-serif;
+  }
+
+  .results-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+    display: block;
+    margin-top: 0;
+  }
+
+  /* Future Work Section */
+  .future-work-section {
+    padding: 60px 40px;
+    background: rgb(21, 21, 21);
+  }
+
+  .future-work-container {
+    position: relative;
+    z-index: 1;
+    margin: 50px 0;
+  }
+
+  .future-work-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    display: block;
+    font-weight: 500;
+  }
+
+  .future-work-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+
+  .future-work-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+
+  .future-work-list li {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1rem;
+    color: rgb(200, 200, 200);
+    margin-bottom: 14px;
+    line-height: 1.6;
+  }
+
+  .future-work-list li strong {
+    font-family: 'Kessel105-Bold', sans-serif;
+    color: rgb(189, 246, 189);
+  }
+
+  /* Bibliography Section */
+  .bibliography-section {
+    padding: 60px 40px;
+    background: white;
+  }
+
+  .bibliography-container {
+    position: relative;
+    z-index: 1;
+    margin: 50px 0;
+  }
+
+  .bibliography-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    display: block;
+    font-weight: 500;
+  }
+
+  .bibliography-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(31, 84, 69);
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+
+  .bibliography-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+
+  .bibliography-list li {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.95rem;
+    color: rgb(31, 84, 69);
+    margin-bottom: 14px;
+    line-height: 1.6;
+  }
+
+  .bibliography-list li em {
+    font-style: italic;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  /* Project Hero Section */
+  .project-hero {
+    position: relative;
+    background: rgb(31, 84, 69);
+    padding: 160px 30px 50px;
+  }
+
+  .project-header {
+    margin-bottom: 160px;
+  }
+
+  .company-name {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 2rem;
+    color: rgb(189, 246, 189);
+    margin: 0;
+  }
+
+  .project-title {
+    font-family: 'Minonuku', sans-serif;
+    font-size: 6rem;
+    font-weight: normal;
+    color: white;
+    margin: 15px 0 30px 0;
+  }
+
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .tag {
+    font-family: 'Kessel105-Book', sans-serif;
+    background: none;
+    border: 2px solid rgb(189, 246, 189);
+    border-radius: 22px;
+    padding: 10px 22px;
+    font-size: 1.1rem;
+    color: rgb(189, 246, 189);
+    text-decoration: none;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 16px;
+    display: block;
+  }
+
+  /* Background transition */
+  body {
+    background: linear-gradient(
+      to bottom,
+      rgb(31, 84, 69) 0%,
+      rgb(31, 84, 69) 50%,
+      white 50%,
+      white 100%
+    ) fixed;
+  }
+
+  /* Project Details Section */
+  .project-details {
+    padding: 70px 30px;
+    background: white;
+  }
+
+  .details-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr; /* First column widest, next two narrower and equal */
+    gap: 35px;
+    align-items: start;
+    margin: 70px 0;
+  }
+
+  .column-left,
+  .column-middle,
+  .column-right {
+    margin: 0;
+    padding: 0;
+  }
+
+  .project-details .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.75rem;
+    color: rgb(31, 84, 69);
+    margin-bottom: 25px;
+    margin-top: 0;
+    align-self: start;
+  }
+
+  .column-left p,
+  .column-middle li,
+  .column-right li,
+  .column-right p {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1.1rem;
+    color: rgb(31, 84, 69);
+    margin-bottom: 16px;
+    line-height: 1.6;
+  }
+
+  .column-middle ul,
+  .column-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 35px 0;
+  }
+
+  /* CTA Dark Button Styles */
+  .cta-dark {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Kessel105-Book', sans-serif;
+    background: none;
+    border: 2px solid rgb(31, 84, 69);
+    border-radius: 30px;
+    padding: 8px 18px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: rgb(31, 84, 69) !important;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin-top: 25px;
+    margin-bottom: 45px;
+  }
+
+  .cta-dark .arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid transparent;
+    margin-left: 12px;
+    transition: all 0.3s ease;
+  }
+
+  .cta-dark .arrow {
+    font-size: 1.5rem;
+    color: rgb(31, 84, 69) !important;
+    transition: transform 0.2s ease, color 0.3s ease;
+  }
+
+  .cta-dark:hover {
+    padding-right: 55px;
+    border-color: transparent;
+    color: rgb(31, 84, 69) !important;
+  }
+
+  .cta-dark:hover .arrow-container {
+    background: rgb(31, 84, 69);
+    border-color: rgb(31, 84, 69);
+  }
+
+  .cta-dark:hover .arrow {
+    color: white !important;
+    transform: translateX(5px);
+  }
+
+  .cta-dark:hover ~ .cursor-outline {
+    transform: translate(-50%, -50%) scale(3);
+    border-width: 0.8px;
+  }
+
+  .transform {
+    transform: translate(-50%, -50%) scale(3);
+  }
+
+  /* Process Section */
+  .process-section {
+    padding: 70px 30px;
+    background: rgb(21, 21, 21);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .process-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(100, 100, 100, 0.2) 0px,
+      rgba(100, 100, 100, 0.2) 1px,
+      transparent 1px,
+      transparent 22px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(100, 100, 100, 0.2) 0px,
+      rgba(100, 100, 100, 0.2) 1px,
+      transparent 1px,
+      transparent 22px
+    );
+    background-attachment: fixed;
+    z-index: 0;
+  }
+
+  .process-container {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    margin: 60px 0;
+  }
+
+  .process-left,
+  .process-right {
+    flex: 1;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.9rem;
+    color: rgb(150, 150, 150);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    display: block;
+  }
+
+  .process-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.75rem;
+    color: white;
+    margin-bottom: 25px;
+    margin-top: 0;
+  }
+
+  .process-left p {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1.1rem;
+    color: rgb(200, 200, 200);
+    margin-bottom: 16px;
+    line-height: 1.6;
+  }
+
+  .process-image img,
+  .prototype-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 14px;
+    display: block;
+  }
+
+  .prototype-image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    align-items: center;
+  }
+
+  .prototype-image img {
+    height: 350px;
+  }
+
+  /* Market Research Findings */
+  .market-research-findings {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .finding-card {
+    background: rgb(30, 30, 30);
+    border-radius: 14px;
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .finding-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .finding-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .finding-icon {
+    font-size: 1.3rem;
+    color: rgb(189, 246, 189);
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .finding-card:hover .finding-icon {
+    transform: scale(1.25);
+  }
+
+  .finding-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.3rem;
+    color: rgb(189, 246, 189);
+    margin: 0;
+  }
+
+  .finding-text {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1rem;
+    color: rgb(200, 200, 200);
+    line-height: 1.6;
+  }
+
+  /* Competitive Research Findings */
+  .competitive-research-findings {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .competitive-card {
+    background: linear-gradient(135deg, rgb(40, 40, 40) 0%, rgb(50, 50, 50) 100%);
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 14px;
+    padding: 25px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .competitive-card:hover {
+    transform: translateX(6px);
+    border-color: rgb(189, 246, 189);
+    box-shadow: 0 7px 22px rgba(189, 246, 189, 0.15);
+  }
+
+  .competitive-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .competitive-icon {
+    font-size: 1.4rem;
+    color: rgb(189, 246, 189);
+    margin-right: 12px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .competitive-card:hover .competitive-icon {
+    transform: rotate(15deg);
+    color: rgb(150, 246, 150);
+  }
+
+  .competitive-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.3rem;
+    color: rgb(189, 246, 189);
+    margin: 0;
+  }
+
+  .competitive-text {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1rem;
+    color: rgb(220, 220, 220);
+    line-height: 1.6;
+  }
+
+  /* Digital Experience Section */
+  .digital-experience-section {
+    padding: 70px 30px;
+    background: white;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .digital-experience-container {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    margin: 70px 0;
+  }
+
+  .digital-experience-left {
+    flex: 1;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    order: 1;
+  }
+
+  .digital-experience-right {
+    flex: 1;
+    order: 2;
+  }
+
+  .digital-experience-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.9rem;
+    color: rgb(150, 150, 150);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    display: block;
+  }
+
+  .digital-experience-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.75rem;
+    color: black;
+    margin-bottom: 25px;
+    margin-top: 0;
+  }
+
+  .digital-experience-right p {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1.1rem;
+    color: black;
+    margin-bottom: 16px;
+    line-height: 1.6;
+  }
+
+  .digital-experience-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 14px;
+    display: block;
+  }
+
+  /* Full Image Section */
+  .full-image-section {
+    padding: 35px 30px;
+    background: white;
+  }
+
+  .full-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 16px;
+    display: block;
+    margin-bottom: 25px;
+  }
+
+  .dual-image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    align-items: start;
+    margin-bottom: 25px;
+  }
+
+  .dual-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 14px;
+    display: block;
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    border-radius: 14px;
+    overflow: hidden;
+  }
+
+  .video-player {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
+  .video-controls {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    display: flex;
+    gap: 15px;
+  }
+
+  .video-controls button {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1rem;
+    color: white;
+    background: rgba(31, 84, 69, 0.8);
+    border: none;
+    border-radius: 22px;
+    padding: 10px 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .video-controls button:hover {
+    background: rgb(31, 84, 69);
+  }
+
+  /* Web Design Section */
+  .web-design-section {
+    padding: 70px 30px;
+    background: white;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .web-design-container {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    margin: 70px 0;
+  }
+
+  .web-design-left {
+    flex: 1;
+    margin-right: 0;
+    order: 1;
+  }
+
+  .web-design-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    order: 2;
+  }
+
+  .web-design-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 0.9rem;
+    color: rgb(150, 150, 150);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    display: block;
+  }
+
+  .web-design-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.75rem;
+    color: black;
+    margin-bottom: 25px;
+    margin-top: 0;
+  }
+
+  .web-design-left p {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1.1rem;
+    color: black;
+    margin-bottom: 16px;
+    line-height: 1.6;
+  }
+
+  .web-design-image-container,
+  .triple-image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    align-items: start;
+  }
+
+  .web-design-image img,
+  .triple-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 14px;
+    display: block;
+  }
+
+  /* GIF Two Column Layout */
+  .gif-two-column-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .gif-column,
+  .vertical-column,
+  .horizontal-row,
+  .square-row {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .vertical-column .gif-item,
+  .horizontal-row .gif-item,
+  .square-row .gif-item {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .gif-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+  .gif-item.vertical img {
+    aspect-ratio: 3/4;
+  }
+
+  .gif-item.square img {
+    aspect-ratio: 1/1;
+  }
+
+  .gif-item.horizontal img {
+    aspect-ratio: 4/3;
+  }
+
+  /* Introduction Section */
+  .introduction-section {
+    padding: 70px 30px;
+    background: rgb(21, 21, 21);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .introduction-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(100, 100, 100, 0.2) 0px,
+      rgba(100, 100, 100, 0.2) 1px,
+      transparent 1px,
+      transparent 22px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(100, 100, 100, 0.2) 0px,
+      rgba(100, 100, 100, 0.2) 1px,
+      transparent 1px,
+      transparent 22px
+    );
+    z-index: 0;
+  }
+
+  .introduction-container {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    margin: 60px 0;
+  }
+
+  .introduction-left,
+  .introduction-right {
+    flex: 1;
+    margin-right: 0;
+    order: 1;
+  }
+
+  .introduction-right {
+    order: 2;
+  }
+
+  .introduction-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    display: block;
+    font-weight: 500;
+  }
+
+  .introduction-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.75rem;
+    color: white;
+    margin-bottom: 25px;
+    margin-top: 0;
+  }
+
+  .introduction-right .work-section-title {
+    margin-top: 0;
+  }
+
+  .introduction-left p,
+  .introduction-right p {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1.1rem;
+    color: rgb(200, 200, 200);
+    margin-bottom: 16px;
+    line-height: 1.6;
+  }
+
+  /* Experiment Section */
+  .experiment-section {
+    padding: 70px 30px;
+    background: white;
+  }
+
+  .experiment-container {
+    position: relative;
+    z-index: 1;
+    margin: 60px 0;
+  }
+
+  .experiment-content {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    align-items: flex-start;
+  }
+
+  .experiment-text {
+    flex: 1;
+    line-height: 1.6;
+    order: 1;
+  }
+
+  .experiment-image {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    order: 2;
+  }
+
+  .experiment-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 14px;
+    display: block;
+  }
+
+  .image-caption {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1rem;
+    color: rgb(100, 100, 100);
+    margin-top: 15px;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Results Section */
+  .results-section {
+    padding: 70px 30px;
+    background: rgb(245, 245, 245);
+  }
+
+  .results-container {
+    position: relative;
+    z-index: 1;
+    margin: 60px 0;
+  }
+
+  .results-content {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    align-items: flex-start;
+  }
+
+  .results-image {
+    flex: 1;
+    max-width: 100%;
+    margin-top: 0;
+    order: 2;
+  }
+
+  .results-text {
+    flex: 1;
+    margin-top: 0;
+    order: 1;
+  }
+
+  .results-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    display: block;
+    font-weight: 500;
+  }
+
+  .results-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.75rem;
+    color: rgb(31, 84, 69);
+    margin-bottom: 25px;
+    margin-top: 0;
+  }
+
+  .results-text p,
+  .results-text li {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1.1rem;
+    color: rgb(31, 84, 69);
+    margin: 0 0 16px 0;
+    line-height: 1.6;
+  }
+
+  .results-text ul {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+  }
+
+  .results-text li strong {
+    font-family: 'Kessel105-Bold', sans-serif;
+  }
+
+  .results-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 14px;
+    display: block;
+    margin-top: 0;
+  }
+
+  /* Future Work Section */
+  .future-work-section {
+    padding: 70px 30px;
+    background: rgb(21, 21, 21);
+  }
+
+  .future-work-container {
+    position: relative;
+    z-index: 1;
+    margin: 60px 0;
+  }
+
+  .future-work-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    display: block;
+    font-weight: 500;
+  }
+
+  .future-work-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.75rem;
+    color: white;
+    margin-bottom: 25px;
+    margin-top: 0;
+  }
+
+  .future-work-list {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+  }
+
+  .future-work-list li {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1.1rem;
+    color: rgb(200, 200, 200);
+    margin-bottom: 16px;
+    line-height: 1.6;
+  }
+
+  .future-work-list li strong {
+    font-family: 'Kessel105-Bold', sans-serif;
+    color: rgb(189, 246, 189);
+  }
+
+  /* Bibliography Section */
+  .bibliography-section {
+    padding: 70px 30px;
+    background: white;
+  }
+
+  .bibliography-container {
+    position: relative;
+    z-index: 1;
+    margin: 60px 0;
+  }
+
+  .bibliography-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    display: block;
+    font-weight: 500;
+  }
+
+  .bibliography-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.75rem;
+    color: rgb(31, 84, 69);
+    margin-bottom: 25px;
+    margin-top: 0;
+  }
+
+  .bibliography-list {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+  }
+
+  .bibliography-list li {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1rem;
+    color: rgb(31, 84, 69);
+    margin-bottom: 16px;
+    line-height: 1.6;
+  }
+
+  .bibliography-list li em {
+    font-style: italic;
+  }
+}
+
+@media (min-width: 1201px) {
+  /* Project Hero Section */
+  .project-hero {
+    position: relative;
+    background: rgb(31, 84, 69);
+    padding: 180px 30px 60px;
+  }
+
+  .project-header {
+    margin-bottom: 180px;
+  }
+
+  .company-name {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 2.25rem;
+    color: rgb(189, 246, 189);
+    margin: 0;
+  }
+
+  .project-title {
+    font-family: 'Minonuku', sans-serif;
+    font-size: 6.5rem;
+    font-weight: normal;
+    color: white;
+    margin: 20px 0 35px 0;
+  }
+
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .tag {
+    font-family: 'Kessel105-Book', sans-serif;
+    background: none;
+    border: 2px solid rgb(189, 246, 189);
+    border-radius: 24px;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    color: rgb(189, 246, 189);
+    text-decoration: none;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    border-radius: 18px;
+    display: block;
+  }
+
+  /* Background transition */
+  body {
+    background: linear-gradient(
+      to bottom,
+      rgb(31, 84, 69) 0%,
+      rgb(31, 84, 69) 50%,
+      white 50%,
+      white 100%
+    ) fixed;
+  }
+
+  /* Project Details Section */
+  .project-details {
+    padding: 80px 30px;
+    background: white;
+  }
+
+  .details-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr; /* First column widest, next two narrower and equal */
+    gap: 40px;
+    align-items: start;
+    margin: 80px 0;
+  }
+
+  .column-left,
+  .column-middle,
+  .column-right {
+    margin: 0;
+    padding: 0;
+  }
+
+  .project-details .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 2rem;
+    color: rgb(31, 84, 69);
+    margin-bottom: 30px;
+    margin-top: 0;
+    align-self: start;
+  }
+
+  .column-left p,
+  .column-middle li,
+  .column-right li,
+  .column-right p {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1.2rem;
+    color: rgb(31, 84, 69);
+    margin-bottom: 18px;
+    line-height: 1.6;
+  }
+
+  .column-middle ul,
+  .column-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+  }
+
+  /* CTA Dark Button Styles */
+  .cta-dark {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Kessel105-Book', sans-serif;
+    background: none;
+    border: 2px solid rgb(31, 84, 69);
+    border-radius: 32px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgb(31, 84, 69) !important;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .cta-dark .arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid transparent;
+    margin-left: 14px;
+    transition: all 0.3s ease;
+  }
+
+  .cta-dark .arrow {
+    font-size: 1.6rem;
+    color: rgb(31, 84, 69) !important;
+    transition: transform 0.2s ease, color 0.3s ease;
+  }
+
+  .cta-dark:hover {
+    padding-right: 60px;
+    border-color: transparent;
+    color: rgb(31, 84, 69) !important;
+  }
+
+  .cta-dark:hover .arrow-container {
+    background: rgb(31, 84, 69);
+    border-color: rgb(31, 84, 69);
+  }
+
+  .cta-dark:hover .arrow {
+    color: white !important;
+    transform: translateX(6px);
+  }
+
+  .cta-dark:hover ~ .cursor-outline {
+    transform: translate(-50%, -50%) scale(3.2);
+    border-width: 0.9px;
+  }
+
+  .transform {
+    transform: translate(-50%, -50%) scale(3.2);
+  }
+
+  /* Process Section */
+  .process-section {
+    padding: 80px 30px;
+    background: rgb(21, 21, 21);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .process-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(100, 100, 100, 0.2) 0px,
+      rgba(100, 100, 100, 0.2) 1px,
+      transparent 1px,
+      transparent 24px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(100, 100, 100, 0.2) 0px,
+      rgba(100, 100, 100, 0.2) 1px,
+      transparent 1px,
+      transparent 24px
+    );
+    background-attachment: fixed;
+    z-index: 0;
+  }
+
+  .process-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    margin: 70px 0;
+  }
+
+  .process-left,
+  .process-right {
+    flex: 1;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1rem;
+    color: rgb(150, 150, 150);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    display: block;
+  }
+
+  .process-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+
+  .process-left p {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1.2rem;
+    color: rgb(200, 200, 200);
+    margin-bottom: 18px;
+    line-height: 1.6;
+  }
+
+  .process-image img,
+  .prototype-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 16px;
+    display: block;
+  }
+
+  .prototype-image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-items: center;
+  }
+
+  .prototype-image img {
+    height: 400px;
+  }
+
+  /* Market Research Findings */
+  .market-research-findings {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .finding-card {
+    background: rgb(30, 30, 30);
+    border-radius: 16px;
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .finding-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  }
+
+  .finding-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+  }
+
+  .finding-icon {
+    font-size: 1.4rem;
+    color: rgb(189, 246, 189);
+    margin-right: 12px;
+    transition: transform 0.3s ease;
+  }
+
+  .finding-card:hover .finding-icon {
+    transform: scale(1.3);
+  }
+
+  .finding-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.4rem;
+    color: rgb(189, 246, 189);
+    margin: 0;
+  }
+
+  .finding-text {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1.1rem;
+    color: rgb(200, 200, 200);
+    line-height: 1.6;
+  }
+
+  /* Competitive Research Findings */
+  .competitive-research-findings {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .competitive-card {
+    background: linear-gradient(135deg, rgb(40, 40, 40) 0%, rgb(50, 50, 50) 100%);
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 16px;
+    padding: 30px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .competitive-card:hover {
+    transform: translateX(8px);
+    border-color: rgb(189, 246, 189);
+    box-shadow: 0 8px 24px rgba(189, 246, 189, 0.15);
+  }
+
+  .competitive-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+  }
+
+  .competitive-icon {
+    font-size: 1.5rem;
+    color: rgb(189, 246, 189);
+    margin-right: 14px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .competitive-card:hover .competitive-icon {
+    transform: rotate(15deg);
+    color: rgb(150, 246, 150);
+  }
+
+  .competitive-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 1.4rem;
+    color: rgb(189, 246, 189);
+    margin: 0;
+  }
+
+  .competitive-text {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1.1rem;
+    color: rgb(220, 220, 220);
+    line-height: 1.6;
+  }
+
+  /* Digital Experience Section */
+  .digital-experience-section {
+    padding: 80px 30px;
+    background: white;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .digital-experience-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    margin: 80px 0;
+  }
+
+  .digital-experience-left {
+    flex: 1;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    order: 1;
+  }
+
+  .digital-experience-right {
+    flex: 1;
+    order: 2;
+  }
+
+  .digital-experience-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1rem;
+    color: rgb(150, 150, 150);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    display: block;
+  }
+
+  .digital-experience-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+
+  .digital-experience-right p {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 18px;
+    line-height: 1.6;
+  }
+
+  .digital-experience-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 16px;
+    display: block;
+  }
+
+  /* Full Image Section */
+  .full-image-section {
+    padding: 40px 30px;
+    background: white;
+  }
+
+  .full-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 18px;
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .dual-image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-items: start;
+    margin-bottom: 30px;
+  }
+
+  .dual-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 16px;
+    display: block;
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .video-player {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
+  .video-controls {
+    position: absolute;
+    bottom: 18px;
+    left: 18px;
+    display: flex;
+    gap: 18px;
+  }
+
+  .video-controls button {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1.1rem;
+    color: white;
+    background: rgba(31, 84, 69, 0.8);
+    border: none;
+    border-radius: 24px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .video-controls button:hover {
+    background: rgb(31, 84, 69);
+  }
+
+  /* Web Design Section */
+  .web-design-section {
+    padding: 80px 30px;
+    background: white;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .web-design-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    margin: 80px 0;
+  }
+
+  .web-design-left {
+    flex: 1;
+    margin-right: 0;
+    order: 1;
+  }
+
+  .web-design-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    order: 2;
+  }
+
+  .web-design-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1rem;
+    color: rgb(150, 150, 150);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    display: block;
+  }
+
+  .web-design-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+
+  .web-design-left p {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 18px;
+    line-height: 1.6;
+  }
+
+  .web-design-image-container,
+  .triple-image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: start;
+  }
+
+  .web-design-image img,
+  .triple-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 16px;
+    display: block;
+  }
+
+  /* GIF Two Column Layout */
+  .gif-two-column-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .gif-column,
+  .vertical-column,
+  .horizontal-row,
+  .square-row {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: flex-start;
+  }
+
+  .vertical-column .gif-item,
+  .horizontal-row .gif-item,
+  .square-row .gif-item {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .gif-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+  .gif-item.vertical img {
+    aspect-ratio: 3/4;
+  }
+
+  .gif-item.square img {
+    aspect-ratio: 1/1;
+  }
+
+  .gif-item.horizontal img {
+    aspect-ratio: 4/3;
+  }
+
+  /* Introduction Section */
+  .introduction-section {
+    padding: 80px 30px;
+    background: rgb(21, 21, 21);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .introduction-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(100, 100, 100, 0.2) 0px,
+      rgba(100, 100, 100, 0.2) 1px,
+      transparent 1px,
+      transparent 24px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(100, 100, 100, 0.2) 0px,
+      rgba(100, 100, 100, 0.2) 1px,
+      transparent 1px,
+      transparent 24px
+    );
+    z-index: 0;
+  }
+
+  .introduction-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    margin: 70px 0;
+  }
+
+  .introduction-left,
+  .introduction-right {
+    flex: 1;
+    margin-right: 0;
+    order: 1;
+  }
+
+  .introduction-right {
+    order: 2;
+  }
+
+  .introduction-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    display: block;
+    font-weight: 500;
+  }
+
+  .introduction-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+
+  .introduction-right .work-section-title {
+    margin-top: 0;
+  }
+
+  .introduction-left p,
+  .introduction-right p {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1.2rem;
+    color: rgb(200, 200, 200);
+    margin-bottom: 18px;
+    line-height: 1.6;
+  }
+
+  /* Experiment Section */
+  .experiment-section {
+    padding: 80px 30px;
+    background: white;
+  }
+
+  .experiment-container {
+    position: relative;
+    z-index: 1;
+    margin: 70px 0;
+  }
+
+  .experiment-content {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  .experiment-text {
+    flex: 1;
+    line-height: 1.6;
+    order: 1;
+  }
+
+  .experiment-image {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    order: 2;
+  }
+
+  .experiment-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 16px;
+    display: block;
+  }
+
+  .image-caption {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1.1rem;
+    color: rgb(100, 100, 100);
+    margin-top: 18px;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Results Section */
+  .results-section {
+    padding: 80px 30px;
+    background: rgb(245, 245, 245);
+  }
+
+  .results-container {
+    position: relative;
+    z-index: 1;
+    margin: 70px 0;
+  }
+
+  .results-content {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  .results-image {
+    flex: 1;
+    max-width: 100%;
+    margin-top: 0;
+    order: 2;
+  }
+
+  .results-text {
+    flex: 1;
+    margin-top: 0;
+    order: 1;
+  }
+
+  .results-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    display: block;
+    font-weight: 500;
+  }
+
+  .results-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 2rem;
+    color: rgb(31, 84, 69);
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+
+  .results-text p,
+  .results-text li {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1.2rem;
+    color: rgb(31, 84, 69);
+    margin: 0 0 18px 0;
+    line-height: 1.6;
+  }
+
+  .results-text ul {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+  }
+
+  .results-text li strong {
+    font-family: 'Kessel105-Bold', sans-serif;
+  }
+
+  .results-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 16px;
+    display: block;
+    margin-top: 0;
+  }
+
+  /* Future Work Section */
+  .future-work-section {
+    padding: 80px 30px;
+    background: rgb(21, 21, 21);
+  }
+
+  .future-work-container {
+    position: relative;
+    z-index: 1;
+    margin: 70px 0;
+  }
+
+  .future-work-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    display: block;
+    font-weight: 500;
+  }
+
+  .future-work-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+
+  .future-work-list {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+  }
+
+  .future-work-list li {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1.2rem;
+    color: rgb(200, 200, 200);
+    margin-bottom: 18px;
+    line-height: 1.6;
+  }
+
+  .future-work-list li strong {
+    font-family: 'Kessel105-Bold', sans-serif;
+    color: rgb(189, 246, 189);
+  }
+
+  /* Bibliography Section */
+  .bibliography-section {
+    padding: 80px 30px;
+    background: white;
+  }
+
+  .bibliography-container {
+    position: relative;
+    z-index: 1;
+    margin: 70px 0;
+  }
+
+  .bibliography-section .section-label {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    display: block;
+    font-weight: 500;
+  }
+
+  .bibliography-section .work-section-title {
+    font-family: 'Kessel105-Bold', sans-serif;
+    font-size: 2rem;
+    color: rgb(31, 84, 69);
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+
+  .bibliography-list {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+  }
+
+  .bibliography-list li {
+    font-family: 'Kessel105-Book', sans-serif;
+    font-size: 1.1rem;
+    color: rgb(31, 84, 69);
+    margin-bottom: 18px;
+    line-height: 1.6;
+  }
+
+  .bibliography-list li em {
+    font-style: italic;
+  }
+}
