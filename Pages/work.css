@@ -542,6 +542,136 @@ body {
   display: block;
 }
 
+/* Portrait Video Section */
+.portrait-video-section {
+  padding: 80px 150px;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.portrait-video-container {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
+  margin: 20px 0 90px 0;
+}
+
+.portrait-video-left {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.portrait-video-right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.portrait-video-right .portrait-video-player {
+  align-self: flex-end; /* Align video player to the right within portrait-video-right */
+}
+
+.portrait-video-section .section-label {
+  font-family: 'Kessel105-Book', sans-serif;
+  font-size: 0.875rem;
+  color: rgb(150, 150, 150);
+  text-transform: uppercase;
+  margin-bottom: 10px; /* Matches web-design-section */
+  display: block;
+}
+
+.portrait-video-section .work-section-title {
+  font-family: 'Kessel105-Bold', sans-serif;
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: 1px; /* Matches web-design-section */
+  margin-top: 0;
+}
+
+.portrait-video-left p,
+.portrait-video-right p {
+  font-family: 'Kessel105-Book', sans-serif;
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 10px; /* Matches web-design-section */
+  line-height: 1.5; /* Matches web-design-section */
+}
+
+.portrait-video-player {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 9/19.5;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.portrait-video-player .video-player {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Figma Embed Section */
+.figma-embed-section {
+  padding: 80px 150px;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.figma-embed-container {
+  position: relative;
+  z-index: 1;
+  margin: 90px 0;
+}
+
+.figma-embed-section .section-label {
+  font-family: 'Kessel105-Book', sans-serif;
+  font-size: 0.875rem;
+  color: rgb(150, 150, 150);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.figma-embed-section .work-section-title {
+  font-family: 'Kessel105-Bold', sans-serif;
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.figma-embed-container p {
+  font-family: 'Kessel105-Book', sans-serif;
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.figma-embed {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.figma-embed iframe {
+  width: 100%;
+  height: 850px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
 /* Full Image Section */
 .full-image-section {
   padding: 20px 150px;
