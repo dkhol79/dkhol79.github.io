@@ -1033,6 +1033,206 @@ body {
 .bibliography-list li em {
   font-style: italic;
 }
+/* User Research Section */
+.user-research-container {
+  align-items: flex-start;
+  margin: 30px 0;
+}
+
+.user-research-findings {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.user-research-card {
+  background: rgb(30, 30, 30);
+  border-radius: 6px;
+  padding: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-research-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.user-research-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.user-research-icon {
+  font-size: 0.9rem;
+  color: rgb(189, 246, 189);
+  margin-right: 5px;
+  transition: transform 0.3s ease;
+}
+
+.user-research-card:hover .user-research-icon {
+  transform: scale(1.1);
+}
+
+.user-research-title {
+  font-family: 'Kessel105-Bold', sans-serif;
+  font-size: 0.9rem;
+  color: rgb(189, 246, 189);
+  margin: 0;
+}
+
+.user-research-text {
+  font-family: 'Kessel105-Book', sans-serif;
+  font-size: 0.75rem;
+  color: rgb(200, 200, 200);
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.user-quote {
+  font-family: 'Kessel105-Book', sans-serif;
+  font-size: 0.75rem;
+  color: rgb(200, 200, 200);
+  line-height: 1.5;
+  background: rgb(25, 25, 25);
+  border-left: 3px solid rgb(189, 246, 189);
+  padding: 8px 12px;
+  margin: 8px 0;
+  border-radius: 3px;
+}
+
+/* Portrait Video Section */
+.portrait-video-section {
+  padding: 30px 15px;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.portrait-video-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
+  margin: 20px 0 30px 0;
+}
+
+.portrait-video-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  order: 1; /* Text on top */
+}
+
+.portrait-video-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  order: 2; /* Video below */
+}
+
+.portrait-video-right .portrait-video-player {
+  align-self: center; /* Center video player */
+}
+
+.portrait-video-section .section-label {
+  font-family: 'Kessel105-Book', sans-serif;
+  font-size: 0.7rem;
+  color: rgb(150, 150, 150);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.portrait-video-section .work-section-title {
+  font-family: 'Kessel105-Bold', sans-serif;
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.portrait-video-left p,
+.portrait-video-right p {
+  font-family: 'Kessel105-Book', sans-serif;
+  font-size: 0.8rem;
+  color: black;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.portrait-video-player {
+  position: relative;
+  width: 100%;
+  max-width: 300px; /* Adjusted for mobile */
+  aspect-ratio: 9/16; /* Standard mobile portrait aspect ratio */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.portrait-video-player .video-player {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Figma Embed Section */
+.figma-embed-section {
+  padding: 30px 15px;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.figma-embed-container {
+  position: relative;
+  z-index: 1;
+  margin: 30px 0;
+}
+
+.figma-embed-section .section-label {
+  font-family: 'Kessel105-Book', sans-serif;
+  font-size: 0.7rem;
+  color: rgb(150, 150, 150);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.figma-embed-section .work-section-title {
+  font-family: 'Kessel105-Bold', sans-serif;
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.figma-embed-container p {
+  font-family: 'Kessel105-Book', sans-serif;
+  font-size: 0.8rem;
+  color: black;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.figma-embed {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.figma-embed iframe {
+  width: 100%;
+  height: 500px; /* Reduced height for mobile */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
 
 @media (max-width: 375px) {
   /* Project Hero Section */
@@ -1192,6 +1392,41 @@ body {
     font-size: 0.8rem;
   }
 
+  /* User Research Section */
+  .user-research-container {
+    margin: 20px 0;
+  }
+
+  .user-research-findings {
+    gap: 8px;
+  }
+
+  .user-research-card {
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .user-research-icon {
+    font-size: 0.8rem;
+    margin-right: 4px;
+  }
+
+  .user-research-title {
+    font-size: 0.85rem;
+  }
+
+  .user-research-text,
+  .user-research-quote {
+    font-size: 0.7rem;
+    line-height: 1.4;
+  }
+
+  .user-research-quote {
+    padding: 6px 10px;
+    margin: 6px 0;
+    border-left: 2px solid rgb(189, 246, 189);
+  }
+
   /* Digital Experience Section */
   .digital-experience-section {
     padding: 30px 15px;
@@ -1215,6 +1450,63 @@ body {
   }
 
   .digital-experience-image img {
+    border-radius: 6px;
+  }
+
+  /* Portrait Video Section */
+  .portrait-video-section {
+    padding: 20px 10px;
+  }
+
+  .portrait-video-container {
+    gap: 12px;
+    margin: 15px 0 20px 0;
+  }
+
+  .portrait-video-section .section-label {
+    font-size: 0.65rem;
+  }
+
+  .portrait-video-section .work-section-title {
+    font-size: 0.9rem;
+  }
+
+  .portrait-video-left p,
+  .portrait-video-right p {
+    font-size: 0.75rem;
+    margin-bottom: 6px;
+  }
+
+  .portrait-video-player {
+    max-width: 260px; /* Adjusted for smaller screens */
+    border-radius: 6px;
+    aspect-ratio: 9/16; /* Standard mobile portrait aspect ratio */
+  }
+
+  /* Figma Embed Section */
+  .figma-embed-section {
+    padding: 20px 10px;
+  }
+
+  .figma-embed-container {
+    margin: 20px 0;
+  }
+
+  .figma-embed-section .section-label {
+    font-size: 0.65rem;
+  }
+
+  .figma-embed-section .work-section-title {
+    font-size: 0.9rem;
+  }
+
+  .figma-embed-container p {
+    font-size: 0.75rem;
+    margin-bottom: 10px;
+  }
+
+  .figma-embed iframe {
+    height: 400px; /* Reduced for smaller screens */
     border-radius: 6px;
   }
 
@@ -1295,6 +1587,12 @@ body {
   .horizontal-row,
   .square-row {
     gap: 8px;
+  }
+
+  .vertical-column .gif-item,
+  .horizontal-row .gif-item,
+  .square-row .gif-item {
+    max-width: 100%;
   }
 
   /* Introduction Section */
@@ -2351,6 +2649,7 @@ body {
     font-style: italic;
   }
 }
+
 @media (min-width: 501px) and (max-width: 600px) {
   /* Project Hero Section */
   .project-hero {

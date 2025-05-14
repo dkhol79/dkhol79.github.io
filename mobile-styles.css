@@ -9,7 +9,7 @@
     }
 
     header {
-        padding: 10px 20px;
+        padding: 10px 20px 0 20px; /* Remove bottom padding to reduce gap */
         box-sizing: border-box; /* Ensures padding doesn't cause overflow */
         width: 100%; /* Explicitly set width */
     }
@@ -28,6 +28,11 @@
         margin: 0;
     }
 
+    main {
+        margin-top: 0; /* Ensure no extra spacing above intro-about */
+        padding-top: 0;
+    }
+
     .intro {
         flex-direction: column; /* Stack the elements vertically */
         padding: 10px 20px; /* Matches header padding */
@@ -36,10 +41,40 @@
         margin-bottom: 50px;
     }
 
-    .left-column, .right-column {
-        flex: none; /* Reset flex properties for both columns */
-        width: 100%; /* Make both columns full width */
-        position: relative; /* Ensures positioning doesn't overlap */
+    .intro-about {
+        flex-direction: column; /* Stack columns vertically */
+        padding: 5px 20px; /* Minimal top padding for controlled gap */
+        align-items: flex-start; /* Align content to the left */
+        margin-top: 50px; /* No top margin to stay close to nav */
+        margin-bottom: 20px;
+    }
+
+    .left-column,
+    .right-column {
+        flex: none; /* Reset flex properties */
+        width: 100%; /* Full width for both columns */
+        position: relative; /* Ensure proper stacking */
+    }
+
+    .polaroid-container {
+        width: 70%;
+        display: flex;
+        justify-content: center; /* Center the image */
+        margin-bottom: 10px; /* Space below polaroid */
+        margin-top: 0; /* Explicitly set to avoid inherited margins */
+    }
+
+    #profile-pic {
+        width: 100%; /* Full width for profile picture */
+        max-width: 300px; /* Limit max width for readability */
+        object-fit: cover; /* Ensure image covers container */
+        border-radius: 10px; /* Consistent with other images */
+    }
+
+    .polaroid-caption {
+        font-size: 0.9rem; /* Smaller font size */
+        text-align: center; /* Center caption */
+        margin-top: 10px; /* Space above caption */
     }
 
     .message {
@@ -47,6 +82,28 @@
         margin-top: 150px;
         margin-bottom: 90px; /* Adds space below message */
         padding: 0; /* Align with header */
+    }
+
+    #message-about {
+        font-size: 5.5rem; /* Fallback font size */
+        margin-top: 20px; /* Reduced to balance smaller text */
+        margin-bottom: 30px; /* Reduced to maintain spacing */
+        padding: 0; /* Match index page .message */
+        line-height: 1.2; /* Ensure proper spacing for child elements */
+        text-align: center; /* Center-align text */
+    }
+
+    #message-about .name-line {
+        font-size: 5.5rem; /* Explicitly set for child divs */
+        line-height: 1.2;
+        text-align: center; /* Ensure child divs are centered */
+    }
+
+    #message-about .gradient-text {
+        font-size: 5.5rem; /* Target the animated span elements */
+        line-height: 1.2; /* Maintain consistent spacing */
+        display: inline-block; /* Ensure proper layout for centering */
+        text-align: center; /* Reinforce centering */
     }
 
     .sub-message {
@@ -67,6 +124,10 @@
 
     .cta {
         font-size: 0.9rem; /* Scales down CTA */
+        padding: 8px 15px; /* Consistent padding with other buttons */
+        display: inline-flex; /* Ensures button doesn't take full width */
+        align-items: center; /* Aligns text and arrow */
+        box-sizing: border-box;
     }
 
     /* Featured Work Section */
@@ -243,7 +304,7 @@
     }
 
     .portfolio-item.long-image {
-        grid-column: 1; /* Stacks long frog in a single column */
+        grid-column: 1; /* Stacks long image in a single column */
     }
 
     /* Footer */
@@ -313,6 +374,94 @@
         text-align: center; /* Center the text */
         width: 100%; /* Ensure it spans the full width */
     }
+
+    /* About Section */
+    #about {
+        padding: 30px 20px; /* Reduced padding for mobile */
+        display: block; /* Stack content vertically */
+        gap: 20px; /* Reduced gap */
+    }
+
+    .paragraph-title {
+        font-size: 1rem; /* Slightly smaller font size */
+        font-weight: bold;
+        font-family: 'Kessel105-Bold', sans-serif;
+        color: white;
+        margin: 5px 0;
+    }
+
+    .content-row {
+        display: block; /* Stack content vertically */
+        gap: 20px; /* Reduced gap */
+    }
+
+    .column-left p,
+    .column-right p {
+        font-size: 0.9rem; /* Smaller font size */
+        font-weight: 300;
+        font-family: 'Kessel105-Book', sans-serif;
+        color: white;
+        margin: 10px 0;
+        line-height: 1.8; /* Adjusted for better readability */
+        padding-bottom: 20px; /* Reduced padding */
+    }
+
+    .column-left h1,
+    .column-left h3 {
+        font-size: 0.9rem; /* Smaller font size */
+        color: rgb(189, 246, 189);
+    }
+
+    .column-left a {
+        font-size: 0.9rem; /* Match paragraph text */
+        color: rgb(189, 246, 189);
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    /* Scoped styles for unordered list and list items in the about page */
+    .about-page ul {
+        margin: 10px 0;
+        padding-left: 20px; /* Reduced padding for mobile */
+        list-style-type: disc !important;
+        color: white;
+        line-height: 1.6; /* Adjusted for mobile */
+    }
+
+    .about-page li {
+        margin-bottom: 8px; /* Reduced margin */
+        padding-left: 10px; /* Reduced padding */
+        font-size: 0.9rem; /* Match paragraph text */
+    }
+
+    .white-space {
+        margin-bottom: 20px; /* Reduced for mobile */
+    }
+
+    .separator-line {
+        width: 100%;
+        height: 1px;
+        background-color: #81C784;
+        margin: 20px 0; /* Reduced margin */
+    }
+
+    /* CTA Button in About Section */
+    .cta {
+        font-size: 0.9rem; /* Match other CTAs */
+        padding: 8px 15px; /* Match other CTAs */
+        display: inline-flex; /* Prevent full-width */
+        align-items: center; /* Align text and arrow */
+        box-sizing: border-box;
+    }
+
+    .arrow-container {
+        width: 25px; /* Match footer button */
+        height: 25px;
+    }
+
+    .arrow {
+        font-size: 1.2rem; /* Match footer button */
+    }
 }
 
 /* For small mobile devices (376px - 500px) */
@@ -326,7 +475,7 @@
     }
 
     header {
-        padding: 10px 20px;
+        padding: 10px 20px 0 20px; /* Remove bottom padding to reduce gap */
         box-sizing: border-box;
         width: 100%;
     }
@@ -344,6 +493,11 @@
         margin: 0;
     }
 
+    main {
+        margin-top: 0; /* Ensure no extra spacing above intro-about */
+        padding-top: 0;
+    }
+
     .intro {
         flex-direction: column;
         padding: 10px 20px; /* Slightly increased padding */
@@ -352,10 +506,40 @@
         margin-bottom: 50px;
     }
 
-    .left-column, .right-column {
+    .intro-about {
+        flex-direction: column; /* Stack columns vertically */
+        padding: 5px 20px; /* Minimal top padding for controlled gap */
+        align-items: flex-start; /* Align content to the left */
+        margin-top: 60px; /* No top margin to stay close to nav */
+        margin-bottom: 20px;
+    }
+
+    .left-column,
+    .right-column {
         flex: none;
         width: 100%;
         position: relative;
+    }
+
+    .polaroid-container {
+        width: 70%;
+        display: flex;
+        justify-content: center; /* Center the image */
+        margin-bottom: 10px; /* Space below polaroid */
+        margin-top: 0; /* Explicitly set to avoid inherited margins */
+    }
+
+    #profile-pic {
+        width: 100%; /* Full width for profile picture */
+        max-width: 300px; /* Limit max width for readability */
+        object-fit: cover; /* Ensure image covers container */
+        border-radius: 10px; /* Consistent with other images */
+    }
+
+    .polaroid-caption {
+        font-size: 1rem; /* Slightly larger font size */
+        text-align: center; /* Center caption */
+        margin-top: 10px; /* Space above caption */
     }
 
     .message {
@@ -363,6 +547,28 @@
         margin-top: 120px;
         margin-bottom: 90px; /* Increased bottom margin */
         padding: 0;
+    }
+
+    #message-about {
+        font-size: 6.5rem; /* Slightly larger than 375px query */
+        margin-top: 20px; /* Reduced to balance smaller text */
+        margin-bottom: 30px; /* Reduced to maintain spacing */
+        padding: 0; /* Match index page .message */
+        line-height: 1.2; /* Ensure proper spacing for child elements */
+        text-align: center; /* Center-align text */
+    }
+
+    #message-about .name-line {
+        font-size: 6.5rem; /* Explicitly set for child divs */
+        line-height: 1.2;
+        text-align: center; /* Ensure child divs are centered */
+    }
+
+    #message-about .gradient-text {
+        font-size: 6.5rem; /* Target the animated span elements */
+        line-height: 1.2; /* Maintain consistent spacing */
+        display: inline-block; /* Ensure proper layout for centering */
+        text-align: center; /* Reinforce centering */
     }
 
     .sub-message {
@@ -383,6 +589,10 @@
 
     .cta {
         font-size: 1rem; /* Increased font size */
+        padding: 8px 15px; /* Consistent padding */
+        display: inline-flex;
+        align-items: center;
+        box-sizing: border-box;
     }
 
     .featured-work {
@@ -484,7 +694,6 @@
         padding: 40px 20px;
     }
 
-    /* Portfolio Subtitle */
     .portfolio-subtitle {
         text-align: left;
         padding: 20px 20px 0 20px;
@@ -603,6 +812,86 @@
         font-size: 0.9rem;
         text-align: center;
         width: 100%;
+    }
+
+    /* About Section */
+    #about {
+        padding: 30px 20px; /* Reduced padding for mobile */
+        display: block; /* Stack content vertically */
+        gap: 20px; /* Reduced gap */
+    }
+
+    .paragraph-title {
+        font-size: 1rem; /* Slightly smaller font size */
+        font-weight: bold;
+        font-family: 'Kessel105-Bold', sans-serif;
+        color: white;
+        margin: 5px 0;
+    }
+
+    .content-row {
+        display: block; /* Stack content vertically */
+        gap: 20px; /* Reduced gap */
+    }
+
+    .column-left p,
+    .column-right p {
+        font-size: 0.9rem; /* Smaller font size */
+        font-weight: 300;
+        font-family: 'Kessel105-Book', sans-serif;
+        color: white;
+        margin: 10px 0;
+        line-height: 1.8; /* Adjusted for better readability */
+        padding-bottom: 20px; /* Reduced padding */
+    }
+
+    .column-left h1,
+    .column-left h3 {
+        font-size: 0.9rem; /* Smaller font size */
+        color: rgb(189, 246, 189);
+    }
+
+    .column-left a {
+        font-size: 0.9rem; /* Match paragraph text */
+        color: rgb(189, 246, 189);
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    /* Scoped styles for unordered list and list items in the about page */
+    .about-page ul {
+        margin: 10px 0;
+        padding-left: 20px; /* Reduced padding for mobile */
+        list-style-type: disc !important;
+        color: white;
+        line-height: 1.6; /* Adjusted for mobile */
+    }
+
+    .about-page li {
+        margin-bottom: 8px; /* Reduced margin */
+        padding-left: 10px; /* Reduced padding */
+        font-size: 0.9rem; /* Match paragraph text */
+    }
+
+    .white-space {
+        margin-bottom: 20px; /* Reduced for mobile */
+    }
+
+    .separator-line {
+        width: 100%;
+        height: 1px;
+        background-color: #81C784;
+        margin: 20px 0; /* Reduced margin */
+    }
+
+    /* CTA Button in About Section */
+    .arrow-container {
+        width: 25px; /* Match footer button */
+        height: 25px;
+    }
+
+    .arrow {
+        font-size: 1.2rem; /* Match footer button */
     }
 }
 
